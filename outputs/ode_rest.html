@@ -1,0 +1,275 @@
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<title>Orbital Data Explorer - REST Interfaces</title>
+<meta id="description" runat="server" name="description" content="NASA Planetary Data System Geosciences Node's Orbital Data Explorer (ODE) and Granular Data System (GDS) REST Interfaces" />
+<meta id="keywords" runat="server" name="keywords" content="NASA Planetary Data System Geosciences Node Orbital Explorer ODE Granular GDS REST Interface" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="SHORTCUT ICON" id="shorcuticon" runat="server" href="ode_mars.ico" />
+<link rel="BOOKMARK" id="bookmark" runat="server" href="ode_mars.ico" />
+<link href="StyleRefresh2.css" rel="stylesheet" type="text/css" /> 
+</head>
+
+<body  style="padding-right: 0px; padding-left: 0px; left: 0px; padding-bottom: 0px; margin: 0px 0px 0px 0px; overflow:visible; width: 100%; padding-top: 0px; position: absolute; top: 0px; height:100%;" >
+     <!--Top Banner-->
+    <div id="Div_TopBanner">
+        <table bgcolor="black" style="BORDER-COLLAPSE: collapse; width: 100%; height: 100px; margin: 0px 0px 0px 0px;" border="0" cellpadding="0" cellspacing="0" id="Table_HeaderBanner">
+            <tr>
+                <td bgcolor="black" >
+                    <img src="images/ODEFullHeading.png" id="imgODEBanner" align="top" usemap="#bannerNavigation" border="0" />
+                    <map name="bannerNavigation">
+                        <area shape="rect" target="_blank" coords="0,0,500,70" href="https://ode.rsl.wustl.edu/" alt="ODE Home" />
+                        <area shape="rect" target="_blank" coords="510,0,800,70" href="https://pds-geosciences.wustl.edu" alt="PDS Geosciences Node at Washington University" />
+                    </map>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- End Top Banner-->
+    <!--<h2>NASA Planetary Data System Geosciences Node's<br/>Orbital Data Explorer (ODE) and Granular Data System (GDS) REST Interfaces</h2>-->
+    <table>
+        <tr>
+            <td valign="top">
+                <table width="288" align="right">
+                    <tr> <td> <a href="#ODERESTInterface">ODE REST Interface</a></td> </tr>
+                    <tr> <td> <a href="ODE_REST_V2.1.6.pdf" target="_blank">ODE REST V2.1.6 User's Manual (PDF)</a> </td> </tr>
+                    <tr> <td> <a href="https://oderest.rsl.wustl.edu/live2?target=mars&query=product&results=c&output=XML&pt=RDR&iid=HiRISE&ihid=MRO" target="_blank">ODE Example Product Count Query</a> </td> </tr>
+                    <tr>
+                        <td>
+                            <a href="https://oderest.rsl.wustl.edu/live2?target=mars&query=product&results=cm&output=XML&pt=RDR&iid=HiRISE&ihid=MRO" target="_blank">ODE Example Product Metadata Query</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://oderest.rsl.wustl.edu/live2?query=products&target=mars&results=c&ihid=MRO&iid=HiRISE&pt=RDRV11&minlat=0.0&maxlat=10.0&westernlon=1&easternlon=5&loc=b" target="_blank">ODE Example Location Bounding Box Query</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://oderest.rsl.wustl.edu/live2/?query=iipt" target="_blank">ODE Example Valid Product Type ("IIPT") Query</a>
+                        </td>
+                    </tr>
+                    <tr> <td> <a href="https://oderest.rsl.wustl.edu/live2/?query=featureclasses&odemetadb=mars" target="_blank">ODE Example Feature Class Query</a> </td> </tr>
+                    <tr> <td> <a href="https://oderest.rsl.wustl.edu/live2/?query=featurenames&odemetadb=mars" target="_blank">ODE Example Feature Name Query</a> </td> </tr>
+                    <tr> <td> <a href="#GDSRESTInterface">GDS REST Interface</a> </td> </tr>
+                    <tr> <td> <a href="GDS_REST_V2.0.pdf" target="_blank">GDS REST User's Manual (PDF)</a></td> </tr>
+                    <tr>
+                        <td>
+                            <a href="https://oderest.rsl.wustl.edu/livegds?query=molapedr&results=vsi&maxlat=0.01&minlat=0.0&westernlon=0.0&easternlon=0.01" target="_blank">GDS MOLA PEDR Example</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://oderest.rsl.wustl.edu/livegds?query=lolardr&results=vsi&maxlat=0.01&minlat=0.0&westernlon=0.0&easternlon=0.01" target="_blank">GDS LOLA RDR Example</a>
+                        </td>
+                    </tr>
+                    <tr> <td> <a href="https://oderest.rsl.wustl.edu/livegds?query=divinerrdr&results=vsi&maxlat=0.01&minlat=0.0&westernlon=0.0&easternlon=0.01&channel=tffffffff" target="_blank">GDS Diviner RDR Example</a></td> </tr>
+                    <!--<tr> <td> <a href="https://oderest.rsl.wustl.edu/livegds?query=mlardr&results=vsi&maxlat=50.1&minlat=50.0&westernlon=0.0&easternlon=0.1&async=t">GDS MLA RDR Example (Asynchronous)</a></td> </tr>-->
+                    <tr> <td> <a href="https://oderest.rsl.wustl.edu/GDSWeb/">GDS Web Pages</a></td> </tr>
+                    <!--<tr> <td> <a href="https://oderest.rsl.wustl.edu/reststats/">REST Statistics (BE PATIENT!)</a></td> </tr>-->
+                </table>               
+            </td>
+            <td width="650">
+                <a id="ODERESTInterface"></a>
+                <h2> Orbital Data Explorer and Granular Data System REST Interfaces</h2>
+                <!-- <div style="margin: auto; width: 650px;background-color:#FFCC99;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;">
+                            <b>Notice:</b>&nbsp;&nbsp;<br/>
+														The ODE REST interface will be unavailable due to scheduled system maintenance December 19th, 7am - 5pm, US Central Time (1400 - 2300 UTC).                
+                 </div> -->
+                
+                <p>
+                    The <a href="https://ode.rsl.wustl.edu">Orbital Data Explorer (ODE)</a> is a web-based search tool
+                    developed at NASA's <a href="https://pds.jpl.nasa.gov/">Planetary Data System's (PDS)</a> <a href="https://pds-geosciences.wustle.edu">Geosciences Node</a>.
+                    Through ODE, users can search, browse, and download a wide range of PDS Mars, Moon, Mercury, and Venus data.
+                </p>
+                <p>
+                    The Geosciences Node provides a simple web-based API that allows non-PDS web and processing tools to search for PDS products, obtain meta-data about those products,
+                    and download the products stored in ODE's meta-data database.
+                </p>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/ODEREST.png" width="600" alt="ODE REST Diagram"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>
+                                    What is a REST API?
+                                    <ul>
+                                        <li>
+                                            REST (Representational State Transfer) is an industry standard method of accessing remote data using HTTP protocols.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    What does ODEâs REST interface offer?
+                                    <ul>
+                                        <li>
+                                            Access to the same PDS product metadata that is available through ODEâs web site.  Examples include:
+                                            <ul>
+                                                <li>Product location</li>
+                                                <li>Lat/Lon bounding box and surface footprints</li>
+				                                        </li>
+				                                        <li>Observation and Creation Times</li>
+				                                        <li>Spacecraft Clock Counts</li>
+				                                        <li>Observation angles (Emission, Incidence, Phase)</li>
+				                                        <li>Solar Longitude and Distance</li>
+				                                        <li>Map Resolution and Scale</li>
+				                                        <li>Browse and thumbnail imagery</li>
+				                                        <li>Full product labels (including referenced format files)</li>
+				                                        <li>URL Links to Product Files</li>
+				                                    </ul>
+                                </li>
+                                <li>Results are returned in XML or JSON format</li>
+                                <li>See the <a href="ODE_REST_V2.1.6.pdf">ODE REST User's Manual (PDF)</a> details</li>
+                            </ul>
+                            </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    How can I use the ODE REST interface?
+                                    <ul>
+                                        <li>
+                                            Simply send an HTTP request of the form: âhttps://oderest.wustl.edu/live2?query=<i>parameters</i>â
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    Query Parameters?
+                                    <ul>
+                                        <li>Query Type (Metadata, Browse, Thumbnail, etc.)</li>
+                                        <li>Target (Mars, Phobos, Deimos, Moon, Mercury, Venus)</li>
+                                        <li>Instrument Host (MRO, LRO, etc.)</li>
+                                        <li>Instrument (CTX, LROC, etc.)</li>
+                                        <li>Product Type (EDR, RDR, etc.)</li>
+                                        <li>
+                                            Location
+                                            <ul>
+                                                <li>Lat/Lon Bounding Box or Polygon-based Footprint</li>
+                                                <li>Intersection type (product footprint intersects, contains, or is contained by lat/lon bounding box or footprint)</li>
+                                            </ul>
+                                        </li>
+                                        <li>Limits on the number of returned products, returned order, and range of returned products â allowing a user to "walkthrough" a large list of returned products without long query times</li>
+                                        <li>See the <a href="ODE_REST_V2.1.6.pdf" target="_blank">ODE REST User's Manual (PDF)</a> for more parameters</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    Where can I get more information about the ODE REST API?
+                                    <ul>
+                                        <li><a href="ODE_REST_V2.1.6.pdf" target="_blank">ODE REST V2.1.6 User's Manual (PDF)</a></li>
+                                        <li><a href="LPSC45_ODE_Abstract.pdf" target="_blank">LPSC 45 (2014) ODE REST Abstract (PDF)</a> </li>
+                                        <li><a href="LPSC45_ODE_Poster.pdf" target="_blank">LPSC 45 (2014) ODE REST Poster (PDF)</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!--
+                            <ul>
+                                <li>
+                                    I heard there was an older version of the ODE REST Interface.
+                                    <ul>
+                                        <li>Yes, information about the older version (V1.1) can be found <a href="ODERESTV1_1.html">here</a>.  Please note, V1.1 will be disappearing in the fall of 2015</li>
+                                    </ul>
+                                </li>
+                            </ul>-->
+                            <ul>
+                                <li>
+                                    REST Site and Examples
+                                    <ul>
+                                        <li>https://oderest.rsl.wustl.edu/live2 - ODE REST V2.1.5 Live Web Site</li>
+                                        <li><a href="https://oderest.rsl.wustl.edu/live2?target=mars&query=product&results=c&output=XML&pt=RDR&iid=HiRISE&ihid=MRO" target="_blank">Example Product Count Query</a></li>
+                                        <li><a href="https://oderest.rsl.wustl.edu/live2?target=mars&query=product&results=cm&output=XML&pt=RDR&iid=HiRISE&ihid=MRO" target="_blank">Example Product Metadata Query</a></li>
+                                        <li><a href="https://oderest.rsl.wustl.edu/live2?query=products&target=mars&results=c&ihid=MRO&iid=HiRISE&pt=RDRV11&minlat=0.0&maxlat=10.0&westernlon=1&easternlon=5&loc=b" target="_blank">Example Location Bounding Box Query</a></li>
+                                        <li><a href="https://oderest.rsl.wustl.edu/live2/?query=iipt" target="_blank">Example Valid Instrument Host/Instrument/Product Type ("IIPT") Query</a></li>
+                                        <li><a href="https://oderest.rsl.wustl.edu/live2/?query=featureclasses&odemetadb=mars" target="_blank">Example Feature Class Query</a></li>
+                                        <li><a href="https://oderest.rsl.wustl.edu/live2/?query=featurenames&odemetadb=mars" target="_blank">Example Feature Name Query</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <a id="GDSRESTInterface"></a>
+                <h3>Granular Data System (GDS) REST Interface</h3>
+                <p>
+                    The <a href="https://ode.rsl.wustl.edu">Orbital Data Explorer (ODE)</a> also provides a set of "granular-level" query tools.  This tools allow
+                    users select portions of a dataset based on location and other parameters. 
+                </p>
+                <table>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>
+                                    What are granular queries?
+                                    <ul>
+                                        <li>
+                                            <a href="LPSC42_ODE.pdf" target="_blank">More information about granular queries (PDF)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    What does the GDS REST interface include?
+                                    <ul>
+                                        <li>Mars - MGS MOLA PEDR query tool</li>
+                                        <li>Moon - LRO LOLA RDR query tool</li>
+                                        <li>Moon - LRO Diviner RDR query tool</li>
+                                        <!--<li>Mercury - MESSENGER MLA RDR query tool</li>-->
+                                    </ul>
+                                </li>
+                                <li>
+                                    GDS REST features?
+                                    <ul>
+                                        <li>Direct (synchronous) and background (asynchronous) queries</li>
+                                        <li>Support for very large queries compared to the existing ODE query tools (especially using background queries)</li>
+                                        <li>Set of Javascript-based web query pages that use the GDS REST interface</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    GDS REST Examples
+                                    <ul>
+                                        <li><a href="GDS_REST_V2.0.pdf" target="_blank">GDS REST V2.0 User's Manual (PDF)</a></li>
+                                        <li>https://oderest.rsl.wustl.edu/livegds - GDS REST V2.0 Live Web Site</a></li>
+                                        <li><a href="https://oderest.rsl.wustl.edu/livegds?query=molapedr&results=vsi&maxlat=0.01&minlat=0.0&westernlon=0.0&easternlon=0.01" target="_blank">GDS MOLA PEDR Example</a></li>
+                                        <li><a href="https://oderest.rsl.wustl.edu/livegds?query=lolardr&results=vsi&maxlat=0.01&minlat=0.0&westernlon=0.0&easternlon=0.01" target="_blank">GDS LOLA RDR Example</a></li>
+                                        <li><a href="https://oderest.rsl.wustl.edu/livegds?query=divinerrdr&results=vsi&maxlat=0.01&minlat=0.0&westernlon=0.0&easternlon=0.01&channel=tffffffff" target="_blank">GDS Diviner RDR Example</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    GDS Web Pages<br/>
+                                    These web pages provide an interface for interacting with the GDS REST services.
+                                    <ul>
+									                    <li><a href="gdsweb/GDSMOLAPEDR.html" title="Mars Global Surveyor MOLA PEDR Query Page V2.0">MOLA PEDR Query Page V2.0</a></li>
+									                    <li><a href="gdsweb/GDSLOLARDR.html" title="Lunar Reconnaisance Orbiter LOLA RDR Query Page V2.0">LOLA RDR Query Page V2.0</a></li>
+									                    <li><a href="gdsweb/GDSDLRERDR.html" title="Lunar Reconnaisance Orbiter Diviner RDR Query Page V2.0">Diviner RDR Query Page V2.0</a></li>
+									                    <li><a href="gdsweb/GDSMLARDR.html" title="MESSENGER MLA RDR Query Page V2.0">MLA RDR Query Page V2.0</a></li>
+                                    </ul>
+                                </li>                                
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <div align="center">
+                                <p>Comments or suggestions to <a href="mailto:oderest@wunder.wustl.edu">oderest@wunder.wustl.edu</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

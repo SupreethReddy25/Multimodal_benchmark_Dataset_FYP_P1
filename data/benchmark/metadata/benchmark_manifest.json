@@ -1,0 +1,612 @@
+{
+  "dataset": {
+    "name": "Multimodal Lunar Benchmark",
+    "version": "1.0.0",
+    "phase": "Phase 1",
+    "purpose": "Standardized multimodal lunar terrain benchmark construction for autonomous landing hazard analysis."
+  },
+  "pilot_region": {
+    "name": "Lacus Mortis - Burg Pilot",
+    "latitude_min_deg": 44.0,
+    "latitude_max_deg": 46.0,
+    "longitude_min_deg": 27.0,
+    "longitude_max_deg": 29.0,
+    "center_latitude_deg": 45.0,
+    "center_longitude_deg": 28.0
+  },
+  "modalities": [
+    "optical",
+    "dem",
+    "thermal"
+  ],
+  "common_grid": {
+    "name": "pilot_common_grid_v1",
+    "projection": {
+      "type": "Equirectangular",
+      "central_meridian_deg": 180.0,
+      "standard_parallel_deg": 0.0,
+      "lunar_radius_m": 1737400.0
+    },
+    "extent": {
+      "longitude_min_deg": 27.0,
+      "longitude_max_deg": 29.0,
+      "latitude_min_deg": 44.0,
+      "latitude_max_deg": 46.0
+    },
+    "resolution": {
+      "pixels_per_degree": 128,
+      "nominal_m_per_pixel": 236.9011751886678
+    },
+    "shape": {
+      "height": 256,
+      "width": 256
+    },
+    "pixel_convention": {
+      "origin": "upper_left",
+      "coordinates": "pixel_centers",
+      "latitude_direction": "north_to_south",
+      "longitude_direction": "west_to_east"
+    },
+    "center_coordinates": {
+      "first_pixel": {
+        "longitude_deg": 27.00390625,
+        "latitude_deg": 45.99609375,
+        "x_m": 818848.9120396303,
+        "y_m": 1394755.6689232818
+      },
+      "last_pixel": {
+        "longitude_deg": 28.99609375,
+        "latitude_deg": 44.00390625,
+        "x_m": 879258.7117127407,
+        "y_m": 1334345.8692501714
+      }
+    }
+  },
+  "source_datasets": {
+    "optical": {
+      "product": "LROC WAC Global Morphology Mosaic 100 m",
+      "source_agency": "USGS / LROC",
+      "source_file": {
+        "path": "data\\raw\\optical\\WAC_GLOBAL_E300N0450_100M.tif",
+        "exists": true,
+        "size_bytes": 496678845,
+        "sha256": "7628283ecf8fd7f458c2b7ddaa608c81131671ca9536793020bbb05c06555bdf"
+      },
+      "native_resolution_m_per_pixel": 100.0,
+      "native_projection": "Lunar Equirectangular",
+      "latitude_convention": "planetocentric",
+      "longitude_domain": "-180 to +180 degrees",
+      "bands": 1,
+      "data_type": "uint8",
+      "harmonization": {
+        "method": "Reprojection and area averaging",
+        "target_resolution_m_per_pixel": 236.9011751886678
+      },
+      "validity_definition": "Source metadata-defined NoData value of 0 was retained as the source validity condition during harmonization.",
+      "native_product_preserved": true
+    },
+    "dem": {
+      "product": "LRO LOLA Global DEM / GDRDEM",
+      "source_agency": "NASA / USGS / PDS",
+      "label_file": {
+        "path": "data\\raw\\dem\\LDEM_256_00N_90N_000_180_FLOAT.LBL",
+        "exists": true,
+        "size_bytes": 5173,
+        "sha256": "13958c4de0a508b7b6ea0e38ba8a4beb9e3cc2f146e18cd9cdb5001543a98a43"
+      },
+      "data_file": {
+        "path": "data\\raw\\dem\\LDEM_256_00N_90N_000_180_FLOAT.IMG",
+        "exists": true,
+        "size_bytes": 4246732800,
+        "sha256": "cf718fa4b797189015a287de41c20d0ded047143130d14ca7635dbf2b731d128"
+      },
+      "native_resolution_m_per_pixel": 118.4505876,
+      "native_resolution_pixels_per_degree": 256,
+      "native_projection": "Simple Cylindrical",
+      "latitude_convention": "planetocentric",
+      "longitude_domain": "0 to 180 degrees for selected source tile",
+      "data_type": "32-bit floating point",
+      "stored_quantity": "Source-relative height values as defined by the PDS product metadata; not relabeled as conventional elevation.",
+      "harmonization": {
+        "method": "Exact 2x2 aggregation from 256 to 128 pixels/degree",
+        "target_resolution_m_per_pixel": 236.9011751886678
+      },
+      "derived_products": [
+        "slope_degrees",
+        "hillshade"
+      ],
+      "native_product_preserved": true
+    },
+    "thermal": {
+      "product": "LRO Diviner Global High-Resolution Mosaic of Bolometric Temperature at Slope-Adjusted Midnight",
+      "source_agency": "NASA / PDS Geosciences",
+      "label_file": {
+        "path": "data\\raw\\thermal\\dghrm_tbol_sam_70s70n_img.xml",
+        "exists": true,
+        "size_bytes": 8004,
+        "sha256": "ec255144b63edd60fa5b23f7945dcddb5de0fb7d918969be9414680eed314ff9"
+      },
+      "native_resolution_m_per_pixel": 236.90117518866782,
+      "native_resolution_pixels_per_degree": 128,
+      "native_projection": "Equirectangular",
+      "latitude_convention": "planetocentric",
+      "longitude_domain": "0 to 360 degrees",
+      "data_type": "IEEE 754 32-bit floating point",
+      "source_missing_value": "NaN",
+      "physical_unit": "Not specified in the downloaded PDS label; source values are preserved without assigning a unit.",
+      "harmonization": {
+        "method": "Direct native-grid mapping",
+        "interpolation": false,
+        "target_resolution_m_per_pixel": 236.9011751886678
+      },
+      "native_product_preserved": true
+    }
+  },
+  "products": {
+    "optical_native_pilot": {
+      "path": "data\\intermediate\\optical\\wac_pilot.npy",
+      "exists": true,
+      "shape": [
+        606,
+        606
+      ],
+      "dtype": "uint8",
+      "finite_values": 367236,
+      "total_values": 367236,
+      "min": 0.0,
+      "max": 254.0,
+      "mean": 61.0864457732902,
+      "std": 30.858483420448938
+    },
+    "optical_common_grid": {
+      "path": "data\\intermediate\\optical\\wac_common_grid.npy",
+      "exists": true,
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_values": 65536,
+      "total_values": 65536,
+      "min": 0.0,
+      "max": 245.7437286376953,
+      "mean": 61.163543701171875,
+      "std": 30.05927276611328
+    },
+    "optical_common_coverage": {
+      "path": "data\\intermediate\\optical\\wac_common_coverage.npy",
+      "exists": true,
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_values": 65536,
+      "total_values": 65536,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.9381609559059143,
+      "std": 0.2323126345872879
+    },
+    "dem_native_pilot": {
+      "path": "data\\intermediate\\dem\\lola_ldem256_pilot.npy",
+      "exists": true,
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "float32",
+      "finite_values": 262144,
+      "total_values": 262144,
+      "min": -4.0178022384643555,
+      "max": -0.3030588626861572,
+      "mean": -1.9878383874893188,
+      "std": 0.8897768259048462
+    },
+    "dem_native_slope": {
+      "path": "data\\intermediate\\dem\\lola_slope_deg.npy",
+      "exists": true,
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "float32",
+      "finite_values": 262144,
+      "total_values": 262144,
+      "min": 0.006023857276886702,
+      "max": 46.41473388671875,
+      "mean": 9.731002807617188,
+      "std": 8.692545890808105
+    },
+    "dem_native_hillshade": {
+      "path": "data\\intermediate\\dem\\lola_hillshade.npy",
+      "exists": true,
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "float32",
+      "finite_values": 262144,
+      "total_values": 262144,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.7155705690383911,
+      "std": 0.12021174281835556
+    },
+    "dem_common_grid": {
+      "path": "data\\intermediate\\dem\\lola_dem_common_grid.npy",
+      "exists": true,
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_values": 65536,
+      "total_values": 65536,
+      "min": -4.00901460647583,
+      "max": -0.30828189849853516,
+      "mean": -1.9878385066986084,
+      "std": 0.8896852731704712
+    },
+    "dem_common_valid_mask": {
+      "path": "data\\intermediate\\dem\\lola_dem_common_valid_mask.npy",
+      "exists": true,
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "bool",
+      "finite_values": 65536,
+      "total_values": 65536
+    },
+    "dem_common_coverage": {
+      "path": "data\\intermediate\\dem\\lola_dem_common_coverage.npy",
+      "exists": true,
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_values": 65536,
+      "total_values": 65536,
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "dem_common_slope": {
+      "path": "data\\intermediate\\dem\\lola_common_slope_deg.npy",
+      "exists": true,
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_values": 65536,
+      "total_values": 65536,
+      "min": 0.0035395673476159573,
+      "max": 38.44361114501953,
+      "mean": 9.49232292175293,
+      "std": 8.612122535705566
+    },
+    "dem_common_hillshade": {
+      "path": "data\\intermediate\\dem\\lola_common_hillshade.npy",
+      "exists": true,
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_values": 65536,
+      "total_values": 65536,
+      "min": 0.17066150903701782,
+      "max": 0.9589501023292542,
+      "mean": 0.6893478631973267,
+      "std": 0.11544178426265717
+    },
+    "thermal_native_pilot": {
+      "path": "data\\intermediate\\thermal\\diviner_tbol_sam_pilot.npy",
+      "exists": true,
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_values": 65536,
+      "total_values": 65536,
+      "min": 87.09007263183594,
+      "max": 168.25961303710938,
+      "mean": 97.37173461914062,
+      "std": 6.928581714630127
+    },
+    "thermal_common_grid": {
+      "path": "data\\intermediate\\thermal\\diviner_tbol_sam_common_grid.npy",
+      "exists": true,
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_values": 65536,
+      "total_values": 65536,
+      "min": 87.09007263183594,
+      "max": 168.25961303710938,
+      "mean": 97.37173461914062,
+      "std": 6.928581714630127
+    },
+    "thermal_common_valid_mask": {
+      "path": "data\\intermediate\\thermal\\diviner_tbol_sam_common_valid_mask.npy",
+      "exists": true,
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "bool",
+      "finite_values": 65536,
+      "total_values": 65536
+    },
+    "thermal_common_coverage": {
+      "path": "data\\intermediate\\thermal\\diviner_tbol_sam_common_coverage.npy",
+      "exists": true,
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_values": 65536,
+      "total_values": 65536,
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  "validation": {
+    "geometric": [
+      "common_grid_definition",
+      "coordinate_range_validation",
+      "native_grid correspondence",
+      "Diviner_common_grid_identity_validation"
+    ],
+    "coverage": [
+      "WAC coverage mask",
+      "LOLA validity mask",
+      "Diviner coverage mask"
+    ],
+    "visual": [
+      "WAC common-grid QC",
+      "LOLA common-grid QC",
+      "common-grid multimodal QC",
+      "native multimodal overlay"
+    ],
+    "quantitative": [
+      "cross-modal mutual information",
+      "cross-modal normalized mutual information",
+      "shift diagnostic",
+      "cross-modal edge correspondence"
+    ]
+  },
+  "validation_outputs": {
+    ".gitkeep": {
+      "path": "outputs\\validation\\.gitkeep",
+      "exists": true,
+      "size_bytes": 2,
+      "sha256": "32c4858e22cc2c967b42150fa550562a2c839c2cebcaab91cabdf6f4da020022"
+    },
+    "common_grid_multimodal_qc.png": {
+      "path": "outputs\\validation\\common_grid_multimodal_qc.png",
+      "exists": true,
+      "size_bytes": 722459,
+      "sha256": "bc6b88bb3f8ce20312950ff5eda21a5f0d163d7c41b84737ef9691cb4926dd9a"
+    },
+    "cross_modal_edge_validation.txt": {
+      "path": "outputs\\validation\\cross_modal_edge_validation.txt",
+      "exists": true,
+      "size_bytes": 980,
+      "sha256": "a3816c82927f962ea07b38656724d124dae84553e6fcb848d9bde7ecc3b9e4af"
+    },
+    "cross_modal_mutual_information.txt": {
+      "path": "outputs\\validation\\cross_modal_mutual_information.txt",
+      "exists": true,
+      "size_bytes": 501,
+      "sha256": "ea21b524c49b143062924489532d4bec23f68063dc9a49d0bea066d6808e3ee0"
+    },
+    "cross_modal_shift_validation.txt": {
+      "path": "outputs\\validation\\cross_modal_shift_validation.txt",
+      "exists": true,
+      "size_bytes": 18625,
+      "sha256": "6fdd9bea517f8c4ef5e7c194c1b361d52e041d6bae036c8d84498b2d68121e82"
+    },
+    "diviner_tbol_sam_pilot.png": {
+      "path": "outputs\\validation\\diviner_tbol_sam_pilot.png",
+      "exists": true,
+      "size_bytes": 208017,
+      "sha256": "05e1628799044357390de9663574fb90512ef3a62e9d2511a59ccfdb1ececc9e"
+    },
+    "lola_common_grid_qc.png": {
+      "path": "outputs\\validation\\lola_common_grid_qc.png",
+      "exists": true,
+      "size_bytes": 173432,
+      "sha256": "d3addc8458f657f153163ad094fb8c4544feed7968d48d4d6e5812db48970a69"
+    },
+    "lola_common_terrain_derivatives.png": {
+      "path": "outputs\\validation\\lola_common_terrain_derivatives.png",
+      "exists": true,
+      "size_bytes": 408686,
+      "sha256": "11353414fb084e3a0d00ae13322362166bae04a0bcfbfcffd6df1caf30fdcb06"
+    },
+    "lola_ldem256_pilot.png": {
+      "path": "outputs\\validation\\lola_ldem256_pilot.png",
+      "exists": true,
+      "size_bytes": 594924,
+      "sha256": "3a7753073eb0dab7d05b4dda7150445255072fea367f3f731ccc9b42cfc50fa5"
+    },
+    "lola_terrain_derivatives.png": {
+      "path": "outputs\\validation\\lola_terrain_derivatives.png",
+      "exists": true,
+      "size_bytes": 1657851,
+      "sha256": "57d00e0e20a33c7af92aaa009c00163e0760693a9a92624c37a6e6d4a8caa5c9"
+    },
+    "multimodal_native_overlay.png": {
+      "path": "outputs\\validation\\multimodal_native_overlay.png",
+      "exists": true,
+      "size_bytes": 1568566,
+      "sha256": "87add3d136d978423c281da5f2cd5258a5306e0e2d66c92241a6444eb78fada7"
+    },
+    "wac_common_grid_qc.png": {
+      "path": "outputs\\validation\\wac_common_grid_qc.png",
+      "exists": true,
+      "size_bytes": 235385,
+      "sha256": "4bacb3a654efdc86a44ee62f285608b9d632aac3e15d27a2d11078fef03d61f7"
+    },
+    "wac_lola_hillshade_overlay.png": {
+      "path": "outputs\\validation\\wac_lola_hillshade_overlay.png",
+      "exists": true,
+      "size_bytes": 1016886,
+      "sha256": "f4df74f9b052aa1a9a93d7c8b1b71fd6d7a83acf9ca5fbaf7f0079694745a3f2"
+    },
+    "wac_lola_overlay.png": {
+      "path": "outputs\\validation\\wac_lola_overlay.png",
+      "exists": true,
+      "size_bytes": 1110976,
+      "sha256": "f6b02ecbb0ea56e71ac7792e169311fa49d3ea3a15f160a0155c22b4d3945e00"
+    },
+    "wac_pilot.png": {
+      "path": "outputs\\validation\\wac_pilot.png",
+      "exists": true,
+      "size_bytes": 868054,
+      "sha256": "9d0e9da31143e7fa0a86a03c60020aa89749928bccd1b5f8783956ede7cd0689"
+    }
+  },
+  "processing_environment": {
+    "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "rasterio_version": "1.4.4",
+    "numpy_version": "2.4.6"
+  },
+  "provenance": {
+    "native_products_preserved": true,
+    "source_metadata_preserved": true,
+    "coverage_masks_preserved": true,
+    "processing_principle": "Native-resolution products are preserved and transformed onto an explicitly defined common spatial framework."
+  },
+  "benchmark_package": {
+    "status": "pilot_benchmark_constructed",
+    "tile_configuration": {
+      "tile_size_pixels": 64,
+      "tile_overlap_pixels": 0,
+      "rows": 4,
+      "columns": 4,
+      "total_tiles": 16
+    },
+    "spatial_partition": {
+      "common_grid_height": 256,
+      "common_grid_width": 256,
+      "pixels_per_degree": 128,
+      "tile_span_degrees": 0.5,
+      "non_overlapping": true,
+      "complete_spatial_coverage": true
+    },
+    "tile_index": {
+      "path": "data\\benchmark\\metadata\\tile_index.json",
+      "exists": true,
+      "size_bytes": 34479,
+      "sha256": "240675a4c89c8b1f6bac2541328dfb3c2213b2fab01c8a38da226eb920f31ff7"
+    },
+    "tile_count": 16,
+    "tile_directory": "data/benchmark/tiles"
+  },
+  "benchmark_statistics": {
+    "statistics_table": {
+      "path": "outputs\\tables\\benchmark_tile_statistics.csv",
+      "exists": true,
+      "size_bytes": 11626,
+      "sha256": "e9f2707ef92e0fc7fffd758c543b45cae20e8441e960e0153feda1bcf5c09057"
+    },
+    "statistics_summary": {
+      "path": "outputs\\tables\\benchmark_tile_statistics_summary.json",
+      "exists": true,
+      "size_bytes": 803,
+      "sha256": "a9273276cc137f19f2bc602237f96d369000bccabc98a5d1374956b52a40bc6f"
+    },
+    "summary": {
+      "tile_count": 16,
+      "optical_coverage": {
+        "mean_of_tile_mean_fraction": 0.9381609429072029,
+        "minimum_tile_mean_fraction": 0.36882243724170394,
+        "maximum_tile_mean_fraction": 1.0,
+        "mean_full_coverage_percent": 92.2698974609375
+      },
+      "dem_coverage": {
+        "mean_of_tile_mean_fraction": 1.0,
+        "minimum_tile_mean_fraction": 1.0,
+        "maximum_tile_mean_fraction": 1.0,
+        "mean_full_coverage_percent": 100.0
+      },
+      "thermal_coverage": {
+        "mean_of_tile_mean_fraction": 1.0,
+        "minimum_tile_mean_fraction": 1.0,
+        "maximum_tile_mean_fraction": 1.0,
+        "mean_full_coverage_percent": 100.0
+      },
+      "slope": {
+        "mean_tile_mean_deg": 9.492323015610175,
+        "minimum_tile_mean_deg": 3.4195969051233988,
+        "maximum_tile_mean_deg": 18.153002929860122
+      }
+    }
+  },
+  "benchmark_validation": {
+    "structural_validation_report": {
+      "path": "outputs\\validation\\benchmark_tile_validation.txt",
+      "exists": true,
+      "size_bytes": 1259,
+      "sha256": "a1a4518c89c92e73591d02b4e64e3545593cc92c5a3c7b1292a61f49b31522e9"
+    },
+    "structural_validation_json": {
+      "path": "outputs\\validation\\benchmark_tile_validation.json",
+      "exists": true,
+      "size_bytes": 1904,
+      "sha256": "832793c51cc86a0fb33333bea78b733590bba41156dfd8d153d4265a12f4b9db"
+    },
+    "result": "PASS",
+    "expected_tiles": 16,
+    "actual_tiles": 16,
+    "covered_pixels": 65536,
+    "missing_pixels": 0,
+    "duplicated_pixels": 0
+  },
+  "benchmark_quality_visualization": {
+    "file": {
+      "path": "outputs\\figures\\benchmark_quality_overview.png",
+      "exists": true,
+      "size_bytes": 195022,
+      "sha256": "3f32c7e695dd703fcb991336245fa404da5d51c9060034a766309cda4019a5e0"
+    },
+    "description": "Four-by-four pilot tile overview showing optical coverage, optical full-coverage percentage, DEM coverage, thermal coverage, mean tile slope, and tile spatial layout."
+  },
+  "phase_1_status": {
+    "status": "pilot_benchmark_complete",
+    "scope": [
+      "native source preservation",
+      "multimodal spatial harmonization",
+      "common-grid construction",
+      "terrain derivative generation",
+      "coverage and validity handling",
+      "cross-modal validation",
+      "provenance tracking",
+      "synchronized benchmark tiling",
+      "tile structural validation",
+      "tile-level quality statistics"
+    ],
+    "phase_2_started": false,
+    "phase_2_components_not_included": [
+      "uncertainty estimation",
+      "adaptive landing decision",
+      "landing-site prediction",
+      "temporal multimodal fusion",
+      "hazard decision model",
+      "reinforcement learning"
+    ]
+  }
+}

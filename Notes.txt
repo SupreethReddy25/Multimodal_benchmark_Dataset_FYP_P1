@@ -1,0 +1,365 @@
+M1 — Multimodal Lunar Data Harmonization Prototype
+Deliverables:
+- Fresh project structure
+- Fresh Python environment
+- Verified optical source
+- Verified DEM source
+- Verified thermal source
+- One common geographic region
+- Three modalities downloaded
+- CRS/projection identified
+- Native resolutions recorded
+- First spatially aligned sample
+- Visual overlay
+- Registration error/quality measurements
+- Metadata JSON
+Once one region works correctly, we scale it to the benchmark.
+
+PILOT REGION
+Name:        Lacus Mortis – Bürg Pilot
+Latitude:    44.0°N → 46.0°N
+Longitude:   27.0°E → 29.0°E
+Center:      45.0°N, 28.0°E
+Extent:      2° × 2°
+
+WORKFLOW FOR THE PILOT REGION ACQUISITION
+Official LROC WAC product
+          ↓
+Obtain global GeoTIFF
+          ↓
+Inspect metadata
+          ↓
+Confirm actual CRS
+          ↓
+Confirm transform
+          ↓
+Confirm dimensions
+          ↓
+Confirm pixel size
+          ↓
+Confirm bounds
+          ↓
+Only then clip
+          ↓
+Lacus Mortis pilot GeoTIFF
+
+100 m WAC morphology mosaic is distributed in 10 regional tiles. Our AOI, 44–46°N and 27–29°E, falls entirely inside:
+WAC_GLOBAL_E300N0450_100M
+
+PILOT REGION DOWNLOAD LINK : https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/EXTRAS/BROWSE/WAC_GLOBAL/WAC_GLOBAL_E300N0450_100M.TIF
+
+M1 — Step 5B result
+Your actual file reports:
+Property	Actual TIFF
+CRS	Equirectangular Moon
+Projection	Equirectangular
+Moon radius	1,737,400 m
+Size	27,291 × 18,194
+Resolution	100 × 100 m
+Data type	uint8
+Bands	1
+Bounds	0–2,729,100 m E / 0–1,819,400 m N
+Transform	100 m pixels
+
+For our pilot AOI:
+- West: 27°E → x = 818,730.461 m
+- East: 29°E → x = 879,377.162 m
+- South: 44°N → y = 1,334,227.419 m
+- North: 46°N → y = 1,394,874.120 m
+So the AOI is approximately 60.65 km × 60.65 km in the WAC projection.
+
+Map bounds: left=818730.461, bottom=1334227.419, right=879377.162, top=1394874.120
+Pixel window: Window(col_off=np.float64(8187.30461452036), row_off=np.float64(4245.258804891237), width=np.float64(606.4670084829913), height=np.float64(606.4670084829922))
+Window width: 606.4670084829913
+Window height: 606.4670084829922
+Rounded window: Window(col_off=8187, row_off=4245, width=606, height=606)
+
+2 degrees ≈ 60,647 m
+60,647 / 100 ≈ 606.47 pixel
+The Extracted Raster has:
+
+Bounds:
+Left   = 818,700 m
+Right  = 879,300 m
+Bottom = 1,334,300 m
+Top    = 1,394,900 m
+
+Resolution:
+100 m × 100 m
+
+Size:
+606 × 606 pixels
+
+DEM source:
+1. Official DEM source
+The appropriate product is LOLA LDEM_256, where:
+- LOLA = Lunar Orbiter Laser Altimeter
+- LDEM = LOLA Digital Elevation Model
+- Resolution: 256 pixels/degree
+- Pixel spacing: 118.4505876 m at the equator
+- Projection: Equirectangular / Simple Cylindrical
+- Latitude convention: planetocentric
+- Longitude: positive east
+- Data type: 16-bit
+- Coverage: global, divided into four tiles by longitude and hemisphere.
+
+For our AOI (Area of Interest) at 44–46°N, 27–29°E, we therefore need:
+LDEM_256 — Northern Hemisphere, 0°–180°E
+
+This falls inside the official LDEM_256 northern/eastern tile:
+LDEM_256_000N_090N_000_180
+
+M1-DEM Record
+Source:        LRO LOLA GDRDEM
+Product:       ldem_256_00n_90n_000_180_float.img
+Resolution:    256 px/degree
+Map scale:     118.4505876 m
+Coverage:      0–90°N, 0–180°E
+Pilot AOI:     44–46°N, 27–29°E
+Status:        Confirmed source product
+
+Field	Value
+Source file	LDEM_256_00N_90N_000_180_FLOAT.IMG
+Records	23,040
+Bytes/record	184,320
+Data object	IMAGE / HEIGHT
+Sample type	PC_REAL
+Sample size	32-bit
+Unit	kilometer
+Offset	1737.4
+
+PDS latest establishes 
+Projection:          SIMPLE CYLINDRICAL
+Map resolution:      256 pix/deg
+Latitude:            0° to 90°N
+Longitude:           0° to 180°E
+Longitude direction: EAST
+Map scale:           0.1184505876 km/pixel
+Line offset:         23039.5
+Sample offset:       46079.5
+Image:               23040 × 46080
+
+
+
+============================================================
+MULTIMODAL SPATIAL CORRESPONDENCE CHECK
+============================================================
+
+WAC native geometry
+-------------------
+Resolution: (100.0, 100.0)
+First pixel center:
+  lon = 27.000644°
+  lat = 45.999205°
+Last pixel center:
+  lon = 28.995806°
+  lat = 44.004042°
+
+LOLA native geometry
+--------------------
+Resolution: 256 pixels/degree
+Ground spacing: 118.4505876 m/pixel
+First pixel:
+  lon = 27.005859°
+  lat = 45.994141°
+Last pixel:
+  lon = 29.001953°
+  lat = 43.998047°
+
+Requested AOI
+-------------
+Longitude: 27.0° to 29.0°
+Latitude : 44.0° to 46.0°
+
+Interpretation:
+The pixel-center ranges should fall just inside the
+requested AOI boundaries because the extracted windows
+contain complete pixels.
+
+Thermal Imageing:
+dghrm_tbol_sam_70s70n_img.xml
+
+Native LOLA
+512 × 512
+118.45 m/px
+        │
+        │ exact 2 × 2 aggregation
+        ▼
+Common Grid
+256 × 256
+236.90 m/px
+
+
+Diviner native GHRM
+256 × 256
+236.901 m/pixel
+        │
+        │ exact pixel-center correspondence
+        │ no interpolation
+        ▼
+Common grid
+256 × 256
+236.901 m/pixel
+
+Parameter	Value	Reason
+Tile size	64×64	Gives manageable spatial samples
+Overlap	0	Clean 4×4 partition of the pilot
+Tiles	16	Complete coverage of the 256×256 pilot
+Geographic span	0.5°×0.5°	Matches 64 px at 128 px/degree
+Modalities	5	Optical, DEM, slope, hillshade, thermal
+Validity layers	3	Prevents missing/invalid pixels being mistaken for observations
+Pixel correspondence	Required	Every modality refers to the same spatial cells
+
+
+Component	Result
+Common grid	256 × 256
+Tile size	64 × 64
+Tiles generated	16
+Tile validation	16/16 PASS
+Expected pixels	65,536
+Covered pixels	65,536/65,536
+Missing pixels	0
+Duplicate pixels	0
+Array synchronization	PASS
+Tile metadata	PASS
+Pixel correspondence	PASS
+
+
+
+Tile	Optical coverage	Mean slope
+tile_00_00	100.00%	3.420°
+tile_00_01	100.00%	9.301°
+tile_00_02	99.80%	10.956°
+tile_00_03	99.49%	7.353°
+tile_01_00	84.89%	10.178°
+tile_01_01	81.62%	14.005°
+tile_01_02	97.14%	11.646°
+tile_01_03	99.22%	13.920°
+tile_02_00	91.33%	8.220°
+tile_02_01	33.06%	18.153°
+tile_02_02	91.48%	12.415°
+tile_02_03	100.00%	13.251°
+tile_03_00	100.00%	3.557°
+tile_03_01	99.83%	4.590°
+tile_03_02	98.46%	6.396°
+tile_03_03	100.00%	4.517°
+
+
+======================================================================
+BENCHMARK TILE STATISTICS
+======================================================================
+
+Tiles found: 16
+
+Processing tile_00_00...
+  Optical coverage : mean=1.0000, full=100.00%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 3.420 deg
+
+Processing tile_00_01...
+  Optical coverage : mean=1.0000, full=100.00%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 9.301 deg
+
+Processing tile_00_02...
+  Optical coverage : mean=0.9998, full=99.80%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 10.956 deg
+
+Processing tile_00_03...
+  Optical coverage : mean=0.9972, full=99.49%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 7.353 deg
+
+Processing tile_01_00...
+  Optical coverage : mean=0.8964, full=84.89%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 10.178 deg
+
+Processing tile_01_01...
+  Optical coverage : mean=0.8773, full=81.62%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 14.005 deg
+
+Processing tile_01_02...
+  Optical coverage : mean=0.9954, full=97.14%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 11.646 deg
+
+Processing tile_01_03...
+  Optical coverage : mean=0.9965, full=99.22%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 13.920 deg
+
+Processing tile_02_00...
+  Optical coverage : mean=0.9485, full=91.33%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 8.220 deg
+
+Processing tile_02_01...
+  Optical coverage : mean=0.3688, full=33.06%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 18.153 deg
+
+Processing tile_02_02...
+  Optical coverage : mean=0.9376, full=91.48%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 12.415 deg
+
+Processing tile_02_03...
+  Optical coverage : mean=1.0000, full=100.00%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 13.251 deg
+
+Processing tile_03_00...
+  Optical coverage : mean=1.0000, full=100.00%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 3.557 deg
+
+Processing tile_03_01...
+  Optical coverage : mean=0.9997, full=99.83%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 4.590 deg
+
+Processing tile_03_02...
+  Optical coverage : mean=0.9933, full=98.46%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 6.396 deg
+
+Processing tile_03_03...
+  Optical coverage : mean=1.0000, full=100.00%
+  DEM coverage     : mean=1.0000, full=100.00%
+  Thermal coverage : mean=1.0000, full=100.00%
+  Mean slope       : 4.517 deg
+
+======================================================================
+BENCHMARK TILE STATISTICS COMPLETE
+======================================================================
+Tiles processed       : 16
+CSV output            : D:\S7\Project Phase 1\Multimodal_Lunar_Benchmark\outputs\tables\benchmark_tile_statistics.csv
+Summary output        : D:\S7\Project Phase 1\Multimodal_Lunar_Benchmark\outputs\tables\benchmark_tile_statistics_summary.json
+
+Dataset-level coverage:
+  Optical mean coverage fraction : 0.9382
+  Optical full coverage           : 92.27%
+  DEM mean coverage fraction      : 1.0000
+  DEM full coverage               : 100.00%
+  Thermal mean coverage fraction  : 1.0000
+  Thermal full coverage            : 100.00%
+
+Mean of tile mean slopes : 9.492 deg

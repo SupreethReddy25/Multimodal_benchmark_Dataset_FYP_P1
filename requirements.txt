@@ -1,0 +1,23 @@
+# Core dependencies
+numpy
+scipy
+pandas
+pyyaml
+
+# Geospatial & Remote Sensing
+rasterio
+geopandas
+shapely
+
+# Image processing & ML
+opencv-python
+torch
+torchvision
+scikit-learn
+scikit-image
+matplotlib
+seaborn
+
+# Development & Testing
+pytest
+tqdm

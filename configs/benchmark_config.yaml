@@ -1,0 +1,93 @@
+# Multimodal Lunar Benchmark Configuration
+
+dataset:
+  name: "Multimodal Lunar Benchmark"
+  version: "1.0.0"
+
+paths:
+  data_raw: "data/raw"
+  data_intermediate: "data/intermediate"
+  data_benchmark: "data/benchmark"
+  outputs: "outputs"
+
+modalities:
+  - optical
+  - dem
+  - thermal
+
+pilot_region:
+  name: "Lacus Mortis - Burg Pilot"
+  latitude_min: 44.0
+  latitude_max: 46.0
+  longitude_min: 27.0
+  longitude_max: 29.0
+  center_latitude: 45.0
+  center_longitude: 28.0
+
+harmonization:
+  common_grid:
+    name: "pilot_common_grid_v1"
+
+    projection:
+      type: "Equirectangular"
+      central_meridian_deg: 180.0
+      standard_parallel_deg: 0.0
+      lunar_radius_m: 1737400.0
+
+    spatial_extent:
+      latitude_min_deg: 44.0
+      latitude_max_deg: 46.0
+      longitude_min_deg: 27.0
+      longitude_max_deg: 29.0
+
+    target_resolution_m_per_pixel: 236.9011751886678
+
+    target_pixels_per_degree: 128
+
+    preserve_native_products: true
+
+    modalities:
+      optical:
+        native_resolution_m: 100.0
+        resampling: "area_average"
+
+      dem:
+        native_resolution_m: 118.4505876
+        resampling: "area_average"
+
+      thermal:
+        native_resolution_m: 236.9011751886678
+        resampling: "native_grid_mapping"
+        
+benchmark:
+  tile_size_pixels: 64
+  tile_overlap_pixels: 0
+
+  tile_grid:
+    rows: 4
+    columns: 4
+    total_tiles: 16
+
+  tile_extent:
+    latitude_span_deg: 0.5
+    longitude_span_deg: 0.5
+
+  tile_id_format: "tile_{row:02d}_{col:02d}"
+
+  spatial_consistency:
+    synchronized_modalities: true
+    common_grid_required: true
+    preserve_pixel_correspondence: true
+
+  contents:
+    optical: true
+    dem: true
+    slope: true
+    hillshade: true
+    thermal: true
+
+    optical_coverage: true
+    dem_valid_mask: true
+    thermal_valid_mask: true
+
+  metadata_per_tile: true

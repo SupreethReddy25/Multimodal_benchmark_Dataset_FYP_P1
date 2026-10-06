@@ -1,0 +1,26 @@
+{
+  "tile_count": 16,
+  "optical_coverage": {
+    "mean_of_tile_mean_fraction": 0.9381609429072029,
+    "minimum_tile_mean_fraction": 0.36882243724170394,
+    "maximum_tile_mean_fraction": 1.0,
+    "mean_full_coverage_percent": 92.2698974609375
+  },
+  "dem_coverage": {
+    "mean_of_tile_mean_fraction": 1.0,
+    "minimum_tile_mean_fraction": 1.0,
+    "maximum_tile_mean_fraction": 1.0,
+    "mean_full_coverage_percent": 100.0
+  },
+  "thermal_coverage": {
+    "mean_of_tile_mean_fraction": 1.0,
+    "minimum_tile_mean_fraction": 1.0,
+    "maximum_tile_mean_fraction": 1.0,
+    "mean_full_coverage_percent": 100.0
+  },
+  "slope": {
+    "mean_tile_mean_deg": 9.492323015610175,
+    "minimum_tile_mean_deg": 3.4195969051233988,
+    "maximum_tile_mean_deg": 18.153002929860122
+  }
+}
