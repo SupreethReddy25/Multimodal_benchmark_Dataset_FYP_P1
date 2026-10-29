@@ -1,0 +1,77 @@
+{
+  "tile_id": "tile_00_00",
+  "region_id": "orientale",
+  "tile_index": {
+    "row": 0,
+    "column": 0
+  },
+  "pixel_window": {
+    "row_start": 0,
+    "row_end_exclusive": 64,
+    "column_start": 0,
+    "column_end_exclusive": 64
+  },
+  "shape": {
+    "height": 64,
+    "width": 64
+  },
+  "spatial_resolution": {
+    "pixels_per_degree": 128,
+    "nominal_m_per_pixel": 236.9011751886676
+  },
+  "geographic_extent": {
+    "longitude_min_deg": 266.00390625,
+    "longitude_max_deg": 266.49609375,
+    "latitude_min_deg": -18.99609375,
+    "latitude_max_deg": -18.50390625
+  },
+  "pixel_center_coordinates": {
+    "first_pixel": {
+      "longitude_deg": 266.00390625,
+      "latitude_deg": -18.50390625
+    },
+    "last_pixel": {
+      "longitude_deg": 266.49609375,
+      "latitude_deg": -18.99609375
+    }
+  },
+  "common_grid": {
+    "name": "orientale_common_grid_v1",
+    "projection": {
+      "type": "Equirectangular",
+      "central_meridian_deg": 180.0,
+      "standard_parallel_deg": 0.0,
+      "lunar_radius_m": 1737400.0
+    }
+  },
+  "modalities": {
+    "optical": {
+      "file": "optical.npy",
+      "source": "LROC WAC"
+    },
+    "dem": {
+      "file": "dem.npy",
+      "source": "LRO LOLA"
+    },
+    "thermal": {
+      "file": "thermal.npy",
+      "source": "LRO Diviner"
+    }
+  },
+  "derived_products": {
+    "slope": "slope.npy",
+    "hillshade": "hillshade.npy"
+  },
+  "validity_products": {
+    "optical_coverage": "optical_coverage.npy",
+    "dem_valid_mask": "dem_valid_mask.npy",
+    "dem_coverage": "dem_coverage.npy",
+    "thermal_valid_mask": "thermal_valid_mask.npy",
+    "thermal_coverage": "thermal_coverage.npy"
+  },
+  "tile_generation": {
+    "tile_size_pixels": 64,
+    "overlap_pixels": 0,
+    "pixel_correspondence_preserved": true
+  }
+}

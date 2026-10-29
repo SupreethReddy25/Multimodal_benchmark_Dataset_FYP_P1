@@ -1,0 +1,44 @@
+{
+  "name": "tycho_common_grid_v1",
+  "region_id": "tycho",
+  "projection": {
+    "type": "Equirectangular",
+    "central_meridian_deg": 180.0,
+    "standard_parallel_deg": 0.0,
+    "lunar_radius_m": 1737400.0
+  },
+  "extent": {
+    "latitude_min_deg": -44.5,
+    "latitude_max_deg": -42.5,
+    "longitude_min_deg": 347.5,
+    "longitude_max_deg": 349.5
+  },
+  "resolution": {
+    "pixels_per_degree": 128,
+    "nominal_m_per_pixel": 236.9011751886676
+  },
+  "shape": {
+    "height": 256,
+    "width": 256
+  },
+  "pixel_convention": {
+    "origin": "upper_left",
+    "coordinates": "pixel_centers",
+    "latitude_direction": "north_to_south",
+    "longitude_direction": "west_to_east"
+  },
+  "center_coordinates": {
+    "first_pixel": {
+      "longitude_deg": 347.50390625,
+      "latitude_deg": -42.50390625,
+      "x_m": 10537482.722979538,
+      "y_m": -1288860.8436139473
+    },
+    "last_pixel": {
+      "longitude_deg": 349.49609375,
+      "latitude_deg": -44.49609375,
+      "x_m": 10597892.52265265,
+      "y_m": -1349270.6432870575
+    }
+  }
+}

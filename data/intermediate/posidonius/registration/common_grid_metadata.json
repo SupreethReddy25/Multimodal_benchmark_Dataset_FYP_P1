@@ -1,0 +1,44 @@
+{
+  "name": "posidonius_common_grid_v1",
+  "region_id": "posidonius",
+  "projection": {
+    "type": "Equirectangular",
+    "central_meridian_deg": 180.0,
+    "standard_parallel_deg": 0.0,
+    "lunar_radius_m": 1737400.0
+  },
+  "extent": {
+    "latitude_min_deg": 31.0,
+    "latitude_max_deg": 33.0,
+    "longitude_min_deg": 28.0,
+    "longitude_max_deg": 30.0
+  },
+  "resolution": {
+    "pixels_per_degree": 128,
+    "nominal_m_per_pixel": 236.9011751886676
+  },
+  "shape": {
+    "height": 256,
+    "width": 256
+  },
+  "pixel_convention": {
+    "origin": "upper_left",
+    "coordinates": "pixel_centers",
+    "latitude_direction": "north_to_south",
+    "longitude_direction": "west_to_east"
+  },
+  "center_coordinates": {
+    "first_pixel": {
+      "longitude_deg": 28.00390625,
+      "latitude_deg": 32.99609375,
+      "x_m": 849172.2624637799,
+      "y_m": 1000552.1134093386
+    },
+    "last_pixel": {
+      "longitude_deg": 29.99609375,
+      "latitude_deg": 31.00390625,
+      "x_m": 909582.0621368903,
+      "y_m": 940142.3137362283
+    }
+  }
+}

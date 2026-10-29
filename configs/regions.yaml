@@ -1,0 +1,323 @@
+# ===========================================================================
+# Multimodal Lunar Benchmark -- Region Registry
+# ===========================================================================
+sources:
+  # LOLA LDEM_256 tiles (N/S x 0-180/180-360 E) are selected per region.
+  lola_base_url: "https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/cylindrical/float_img"
+  diviner_url: "https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_diviner_derived1/data_derived_ghrm/img/dghrm_tbol_sam_70s70n_img.img"
+  # WAC 100 m equatorial tiles (90 x 60 deg) are selected per region.
+  wac_base_url: "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/EXTRAS/BROWSE/WAC_GLOBAL"
+
+regions:
+
+  lacus_mortis:
+    terrain: "mare + complex crater"
+    name: "Lacus Mortis - Burg Crater Pilot"
+    description: >
+      Mid-latitude mare region dominated by the 40 km Burg complex-impact
+      crater with tectonic rilles, smooth basalt plains, and steep crater
+      walls.  Original pilot region.
+    lat_min: 44.0
+    lat_max: 46.0
+    lon_min: 27.0
+    lon_max: 29.0
+
+  posidonius:
+    terrain: "floor-fractured crater"
+    name: "Posidonius / Mare Serenitatis Rim"
+    description: >
+      95 km floor-fractured crater on the north-eastern rim of Mare
+      Serenitatis with concentric ridge systems, volcanic infill, and rilles.
+    lat_min: 31.0
+    lat_max: 33.0
+    lon_min: 28.0
+    lon_max: 30.0
+
+  montes_apenninus:
+    terrain: "mountain range + rille"
+    name: "Montes Apenninus / Hadley Rille"
+    description: >
+      Tallest lunar mountain range forming the south-eastern rim of Mare
+      Imbrium, including Hadley Rille (Apollo 15 landing area).
+    lat_min: 25.0
+    lat_max: 27.0
+    lon_min: 3.0
+    lon_max: 5.0
+
+  aristoteles:
+    terrain: "rugged crater ejecta"
+    name: "Aristoteles + Mitchell Craters"
+    description: >
+      Large paired Eratosthenian-aged impact craters at high northern
+      latitude with rugged ejecta blankets and terraced walls.
+    lat_min: 49.0
+    lat_max: 51.0
+    lon_min: 16.0
+    lon_max: 18.0
+
+  endymion:
+    terrain: "dark mare-filled crater"
+    name: "Endymion Crater"
+    description: >
+      Large flooded ancient crater with extremely dark smooth basalt floor
+      at high northern latitude.  Ultra-low-albedo thermal reference.
+    lat_min: 52.0
+    lat_max: 54.0
+    lon_min: 54.0
+    lon_max: 56.0
+
+  mare_crisium:
+    terrain: "flat mare basin"
+    name: "Mare Crisium Basin"
+    description: >
+      Isolated circular mare basin with ultra-flat floor.  Lowest-slope
+      reference region in the benchmark.
+    lat_min: 15.0
+    lat_max: 17.0
+    lon_min: 58.0
+    lon_max: 60.0
+
+  taurus_littrow:
+    name: "Taurus-Littrow Valley (Apollo 17)"
+    terrain: "highland massifs + dark mantle valley"
+    description: >
+      Apollo 17 landing area: steep highland massifs bounding a narrow
+      dark-mantled valley on the south-eastern rim of Mare Serenitatis.
+      Sample-return ground truth exists for this site.
+    lat_min: 19.0
+    lat_max: 21.0
+    lon_min: 30.0
+    lon_max: 32.0
+
+  tranquillitatis:
+    name: "Mare Tranquillitatis (Apollo 11)"
+    terrain: "equatorial mare plain"
+    description: >
+      Apollo 11 landing area on a low-relief equatorial mare plain with
+      small craters; warm equatorial thermal regime and sample ground truth.
+    lat_min: 0.0
+    lat_max: 2.0
+    lon_min: 23.0
+    lon_max: 25.0
+
+  proclus:
+    name: "Proclus Crater and Rays"
+    terrain: "young bright crater + ray system"
+    description: >
+      Young, optically bright impact crater with an asymmetric ray system
+      on the western rim of Mare Crisium; extreme albedo contrast.
+    lat_min: 15.0
+    lat_max: 17.0
+    lon_min: 46.0
+    lon_max: 48.0
+
+  hyginus:
+    name: "Rima Hyginus"
+    terrain: "volcanic rille + pit craters"
+    description: >
+      Hyginus crater and the linear Rima Hyginus rille: a chain of
+      endogenic pit craters, distinct from impact morphology.
+    lat_min: 7.0
+    lat_max: 9.0
+    lon_min: 5.0
+    lon_max: 7.0
+
+  atlas:
+    name: "Atlas Crater"
+    terrain: "northern highland crater"
+    description: >
+      Atlas crater in the northern nearside highlands near the Mare
+      Frigoris margin; terraced walls and a mid-latitude highland setting.
+    lat_min: 46.0
+    lat_max: 48.0
+    lon_min: 43.0
+    lon_max: 45.0
+
+  humboldtianum:
+    name: "Mare Humboldtianum"
+    terrain: "high-latitude low-sun mare"
+    description: >
+      Mare within the Humboldtianum basin at ~57N: low solar incidence,
+      long shadows and a stress test for optical and thermal modalities.
+    lat_min: 56.0
+    lat_max: 58.0
+    lon_min: 80.0
+    lon_max: 82.0
+
+  descartes:
+    name: "Descartes Highlands (Apollo 16)"
+    terrain: "southern highland terrain"
+    description: >
+      Apollo 16 landing area in the southern nearside highlands: bright,
+      heavily cratered, non-mare terrain with sample ground truth.
+    lat_min: -10.0
+    lat_max: -8.0
+    lon_min: 15.0
+    lon_max: 17.0
+
+  tycho:
+    name: "Tycho Crater"
+    terrain: "young complex crater (south)"
+    description: >
+      Young (~110 Ma) complex crater in the southern highlands with a
+      central peak, terraced walls and a bright ray system.
+    lat_min: -44.5
+    lat_max: -42.5
+    lon_min: 347.5
+    lon_max: 349.5
+
+  tsiolkovsky:
+    name: "Tsiolkovsky Crater (farside)"
+    terrain: "farside crater + mare fill"
+    description: >
+      Farside complex crater with a dark mare-filled floor and prominent
+      central peak, giving a farside highland/mare contrast.
+    lat_min: -21.5
+    lat_max: -19.5
+    lon_min: 128.0
+    lon_max: 130.0
+
+  copernicus:
+    name: "Copernicus Crater"
+    terrain: "young complex crater (nearside mare)"
+    description: >
+      ~800 Ma, 93 km complex crater on Mare Imbrium's southern margin with
+      terraced walls, central peaks, and a prominent ray system; a young-crater
+      thermal and optical reference at low latitude.
+    lat_min: 8.5
+    lat_max: 10.5
+    lon_min: 339.0
+    lon_max: 341.0
+
+  aristarchus:
+    name: "Aristarchus Plateau"
+    terrain: "bright young crater + volcanic plateau"
+    description: >
+      Brightest large nearside crater beside the Aristarchus Plateau and
+      Schroter's Valley sinuous rille; very high albedo with pyroclastic
+      deposits nearby.
+    lat_min: 22.5
+    lat_max: 24.5
+    lon_min: 311.5
+    lon_max: 313.5
+
+  orientale:
+    name: "Mare Orientale"
+    terrain: "multi-ring basin interior"
+    description: >
+      Interior of the youngest large multi-ring basin on the western limb,
+      with mare patches, concentric rings and basin-ejecta texture.
+    lat_min: -20.5
+    lat_max: -18.5
+    lon_min: 266.0
+    lon_max: 268.0
+
+  ingenii:
+    name: "Mare Ingenii (farside swirls)"
+    terrain: "farside mare + magnetic swirls"
+    description: >
+      Farside mare within the Ingenii basin, hosting the Reiner-Gamma-type
+      swirl albedo markings; farside regolith texture unlike nearside maria.
+    lat_min: -34.5
+    lat_max: -32.5
+    lon_min: 162.5
+    lon_max: 164.5
+
+  fra_mauro:
+    name: "Fra Mauro Highlands (Apollo 14)"
+    terrain: "highland ejecta formation"
+    description: >
+      Fra Mauro formation, a rolling Imbrium-basin ejecta terrain and the
+      Apollo 14 landing area with sample ground truth.
+    lat_min: -7.0
+    lat_max: -5.0
+    lon_min: 342.0
+    lon_max: 344.0
+
+  sinus_iridum:
+    name: "Sinus Iridum"
+    terrain: "mare bay + mountain arc"
+    description: >
+      Bay on the north-western rim of Mare Imbrium bounded by the Montes Jura
+      arc: smooth mare plain against steep highland rim and wrinkle ridges.
+    lat_min: 44.0
+    lat_max: 46.0
+    lon_min: 327.5
+    lon_max: 329.5
+
+  moscoviense:
+    name: "Mare Moscoviense (farside)"
+    terrain: "farside mare basin"
+    description: >
+      Farside mare in the Moscoviense basin: one of the few large farside
+      mare units, with a highland rim and a thin dark basalt fill.
+    lat_min: 26.5
+    lat_max: 28.5
+    lon_min: 147.0
+    lon_max: 149.0
+
+  korolev:
+    name: "Korolev Crater (farside)"
+    terrain: "farside highland basin crater"
+    description: >
+      Large farside crater inside the Korolev basin: heavily cratered
+      highland terrain with no mare fill.
+    lat_min: -5.0
+    lat_max: -3.0
+    lon_min: 201.5
+    lon_max: 203.5
+
+  kepler:
+    name: "Kepler Crater"
+    terrain: "young bright crater + rays (Procellarum)"
+    description: >
+      Young bright-rayed crater on Oceanus Procellarum with a sharp rim and
+      high-albedo ejecta against dark mare.
+    lat_min: 7.0
+    lat_max: 9.0
+    lon_min: 321.0
+    lon_max: 323.0
+
+  grimaldi:
+    name: "Grimaldi Basin"
+    terrain: "dark-floored basin"
+    description: >
+      Dark mare-filled floor of the Grimaldi basin on the western limb,
+      with strong albedo contrast against surrounding highlands.
+    lat_min: -6.5
+    lat_max: -4.5
+    lon_min: 290.5
+    lon_max: 292.5
+
+  alphonsus:
+    name: "Alphonsus Crater"
+    terrain: "crater with pyroclastic dark halos"
+    description: >
+      Crater with a central peak, rilles and dark-halo pyroclastic deposits
+      on its floor; a volcanic-versus-impact contrast region.
+    lat_min: -14.5
+    lat_max: -12.5
+    lon_min: 356.0
+    lon_max: 358.0
+
+  plato:
+    name: "Plato Crater"
+    terrain: "high-latitude dark-floored crater"
+    description: >
+      Large dark-floored crater near Mare Frigoris at ~52N: flat basalt floor
+      inside steep, high-latitude walls with low sun angles.
+    lat_min: 50.5
+    lat_max: 52.5
+    lon_min: 349.5
+    lon_max: 351.5
+
+  apollo_basin:
+    name: "Apollo Basin (farside)"
+    terrain: "farside basin interior"
+    description: >
+      Interior of the Apollo impact basin in the South Pole-Aitken region:
+      farside mare patches and basin-floor fracturing.
+    lat_min: -37.0
+    lat_max: -35.0
+    lon_min: 207.0
+    lon_max: 209.0

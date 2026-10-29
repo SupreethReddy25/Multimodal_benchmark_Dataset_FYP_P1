@@ -1,0 +1,44 @@
+{
+  "name": "descartes_common_grid_v1",
+  "region_id": "descartes",
+  "projection": {
+    "type": "Equirectangular",
+    "central_meridian_deg": 180.0,
+    "standard_parallel_deg": 0.0,
+    "lunar_radius_m": 1737400.0
+  },
+  "extent": {
+    "latitude_min_deg": -10.0,
+    "latitude_max_deg": -8.0,
+    "longitude_min_deg": 15.0,
+    "longitude_max_deg": 17.0
+  },
+  "resolution": {
+    "pixels_per_degree": 128,
+    "nominal_m_per_pixel": 236.9011751886676
+  },
+  "shape": {
+    "height": 256,
+    "width": 256
+  },
+  "pixel_convention": {
+    "origin": "upper_left",
+    "coordinates": "pixel_centers",
+    "latitude_direction": "north_to_south",
+    "longitude_direction": "west_to_east"
+  },
+  "center_coordinates": {
+    "first_pixel": {
+      "longitude_deg": 15.00390625,
+      "latitude_deg": -8.00390625,
+      "x_m": 454968.7069498365,
+      "y_m": -242705.2539807902
+    },
+    "last_pixel": {
+      "longitude_deg": 16.99609375,
+      "latitude_deg": -9.99609375,
+      "x_m": 515378.5066229469,
+      "y_m": -303115.0536539005
+    }
+  }
+}

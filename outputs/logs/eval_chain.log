@@ -1,0 +1,46 @@
+          region     side hemisphere split  relief_km  slope_mean_deg  thermal_mean_K  optical_cov
+    lacus_mortis nearside          N train       3.36            9.49           97.37         0.94
+      posidonius nearside          N train       1.25            4.09           98.76         0.99
+montes_apenninus nearside          N train       3.87           11.57           98.66         0.99
+     aristoteles nearside          N train       3.77            6.28           95.88         0.96
+        endymion nearside          N   val       3.48            5.21           90.64         0.89
+    mare_crisium nearside          N  test       0.24            0.64          101.04         1.00
+  taurus_littrow nearside          N  test       2.27            9.59          100.76         0.99
+ tranquillitatis nearside          N train       0.46            1.05          101.44         1.00
+         proclus nearside          N train       4.06           11.83          104.82         1.00
+         hyginus nearside          N   val       0.99            3.19          101.94         1.00
+           atlas nearside          N train       2.46            7.66           94.77         1.00
+   humboldtianum nearside          N train       0.26            1.57           91.08         1.00
+       descartes nearside          S train       0.91            5.58          100.55         1.00
+           tycho nearside          S  test       3.85            9.21          120.37         0.99
+     tsiolkovsky  farside          S  test       2.63            4.61          106.66         1.00
+      copernicus nearside          N  test       3.09            7.17          109.22         1.00
+     aristarchus nearside          N train       3.67            8.25          113.60         1.00
+       orientale  farside          S train       0.40            1.06           99.51         1.00
+         ingenii  farside          S  test       1.18            3.26           97.04         1.00
+       fra_mauro nearside          S train       0.24            2.11          101.70         1.00
+    sinus_iridum nearside          N train       0.18            0.89           95.65         1.00
+region               NCC@0  NCCbest  shift(dy,dx)  rank/121
+lacus_mortis         0.319    0.383       (-3, 1)        81
+posidonius           0.515    0.566        (0, 3)        42
+montes_apenninus     0.422    0.484       (1, -3)        71
+aristoteles          0.514    0.568       (1, -2)        40
+endymion             0.597    0.633        (0, 2)        22
+mare_crisium         0.520    0.560        (0, 1)         5
+taurus_littrow       0.398    0.450       (1, -2)        24
+tranquillitatis      0.582    0.604        (0, 2)         4
+proclus              0.176    0.278       (-1, 5)       120
+hyginus              0.628    0.704        (0, 2)        15
+atlas                0.197    0.297       (-1, 3)        79
+humboldtianum        0.565    0.604        (0, 2)         7
+descartes            0.380    0.493       (0, -2)        21
+tycho                0.417    0.481        (1, 2)        34
+tsiolkovsky          0.607    0.665       (0, -4)        70
+copernicus           0.525    0.558       (1, -1)        11
+aristarchus          0.391    0.414        (1, 3)        42
+orientale            0.497    0.527        (0, 2)         5
+ingenii              0.613    0.649       (0, -3)        32
+fra_mauro            0.631    0.657        (1, 2)         6
+sinus_iridum         0.616    0.685        (0, 2)         5
+
+Saved C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\outputs\experiments\registration_check.json

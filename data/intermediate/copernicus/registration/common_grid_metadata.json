@@ -1,0 +1,44 @@
+{
+  "name": "copernicus_common_grid_v1",
+  "region_id": "copernicus",
+  "projection": {
+    "type": "Equirectangular",
+    "central_meridian_deg": 180.0,
+    "standard_parallel_deg": 0.0,
+    "lunar_radius_m": 1737400.0
+  },
+  "extent": {
+    "latitude_min_deg": 8.5,
+    "latitude_max_deg": 10.5,
+    "longitude_min_deg": 339.0,
+    "longitude_max_deg": 341.0
+  },
+  "resolution": {
+    "pixels_per_degree": 128,
+    "nominal_m_per_pixel": 236.9011751886676
+  },
+  "shape": {
+    "height": 256,
+    "width": 256
+  },
+  "pixel_convention": {
+    "origin": "upper_left",
+    "coordinates": "pixel_centers",
+    "latitude_direction": "north_to_south",
+    "longitude_direction": "west_to_east"
+  },
+  "center_coordinates": {
+    "first_pixel": {
+      "longitude_deg": 339.00390625,
+      "latitude_deg": 10.49609375,
+      "x_m": 10279734.244374268,
+      "y_m": 318276.7288659752
+    },
+    "last_pixel": {
+      "longitude_deg": 340.99609375,
+      "latitude_deg": 8.50390625,
+      "x_m": 10340144.044047378,
+      "y_m": 257866.92919286492
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "ingenii_common_grid_v1",
+  "region_id": "ingenii",
+  "projection": {
+    "type": "Equirectangular",
+    "central_meridian_deg": 180.0,
+    "standard_parallel_deg": 0.0,
+    "lunar_radius_m": 1737400.0
+  },
+  "extent": {
+    "latitude_min_deg": -34.5,
+    "latitude_max_deg": -32.5,
+    "longitude_min_deg": 162.5,
+    "longitude_max_deg": 164.5
+  },
+  "resolution": {
+    "pixels_per_degree": 128,
+    "nominal_m_per_pixel": 236.9011751886676
+  },
+  "shape": {
+    "height": 256,
+    "width": 256
+  },
+  "pixel_convention": {
+    "origin": "upper_left",
+    "coordinates": "pixel_centers",
+    "latitude_direction": "north_to_south",
+    "longitude_direction": "west_to_east"
+  },
+  "center_coordinates": {
+    "first_pixel": {
+      "longitude_deg": 162.50390625,
+      "latitude_deg": -32.50390625,
+      "x_m": 4927662.894511885,
+      "y_m": -985627.3393724525
+    },
+    "last_pixel": {
+      "longitude_deg": 164.49609375,
+      "latitude_deg": -34.49609375,
+      "x_m": 4988072.694184995,
+      "y_m": -1046037.1390455628
+    }
+  }
+}

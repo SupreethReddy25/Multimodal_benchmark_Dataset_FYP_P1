@@ -1,0 +1,44 @@
+{
+  "name": "tranquillitatis_common_grid_v1",
+  "region_id": "tranquillitatis",
+  "projection": {
+    "type": "Equirectangular",
+    "central_meridian_deg": 180.0,
+    "standard_parallel_deg": 0.0,
+    "lunar_radius_m": 1737400.0
+  },
+  "extent": {
+    "latitude_min_deg": 0.0,
+    "latitude_max_deg": 2.0,
+    "longitude_min_deg": 23.0,
+    "longitude_max_deg": 25.0
+  },
+  "resolution": {
+    "pixels_per_degree": 128,
+    "nominal_m_per_pixel": 236.9011751886676
+  },
+  "shape": {
+    "height": 256,
+    "width": 256
+  },
+  "pixel_convention": {
+    "origin": "upper_left",
+    "coordinates": "pixel_centers",
+    "latitude_direction": "north_to_south",
+    "longitude_direction": "west_to_east"
+  },
+  "center_coordinates": {
+    "first_pixel": {
+      "longitude_deg": 23.00390625,
+      "latitude_deg": 1.99609375,
+      "x_m": 697555.5103430324,
+      "y_m": 60528.250260704626
+    },
+    "last_pixel": {
+      "longitude_deg": 24.99609375,
+      "latitude_deg": 0.00390625,
+      "x_m": 757965.3100161427,
+      "y_m": 118.45058759433391
+    }
+  }
+}

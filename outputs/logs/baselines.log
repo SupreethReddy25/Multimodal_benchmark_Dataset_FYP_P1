@@ -1,0 +1,45 @@
+
+== task: thermal (K)
+  thermal -                     mean     seed=0  RMSE=7.595  R2=-1.481  anomR2=-0.000
+C:\Supreeth\Projects\Lunar\.venv\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.3965584244601814e-09.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+  thermal latitude only         latitude seed=0  RMSE=8.171  R2=-1.970  anomR2=0.000
+  thermal optical               ridge    seed=0  RMSE=7.108  R2=-1.250  anomR2=-0.186
+  thermal optical               hist_gb  seed=0  RMSE=6.664  R2=-1.729  anomR2=-0.863
+  thermal optical               cnn      seed=0  RMSE=5.694  R2=-1.932  anomR2=-0.850
+  thermal optical               hist_gb  seed=1  RMSE=6.679  R2=-1.755  anomR2=-0.889
+  thermal optical               cnn      seed=1  RMSE=5.725  R2=-1.259  anomR2=-0.548
+  thermal optical               hist_gb  seed=2  RMSE=6.674  R2=-1.793  anomR2=-0.934
+  thermal optical               cnn      seed=2  RMSE=5.934  R2=-0.975  anomR2=-0.289
+  thermal terrain               ridge    seed=0  RMSE=7.417  R2=-2.280  anomR2=-0.888
+  thermal terrain               hist_gb  seed=0  RMSE=7.554  R2=-2.653  anomR2=-1.279
+  thermal terrain               cnn      seed=0  RMSE=7.707  R2=-4.027  anomR2=-2.041
+  thermal terrain               hist_gb  seed=1  RMSE=7.573  R2=-2.665  anomR2=-1.283
+  thermal terrain               cnn      seed=1  RMSE=7.909  R2=-3.441  anomR2=-1.283
+  thermal terrain               hist_gb  seed=2  RMSE=7.548  R2=-2.629  anomR2=-1.248
+  thermal terrain               cnn      seed=2  RMSE=7.452  R2=-3.056  anomR2=-1.254
+  thermal optical+terrain       ridge    seed=0  RMSE=7.193  R2=-2.027  anomR2=-0.802
+  thermal optical+terrain       hist_gb  seed=0  RMSE=6.840  R2=-3.277  anomR2=-1.963
+  thermal optical+terrain       cnn      seed=0  RMSE=6.665  R2=-4.289  anomR2=-2.776
+  thermal optical+terrain       hist_gb  seed=1  RMSE=6.867  R2=-3.573  anomR2=-2.277
+  thermal optical+terrain       cnn      seed=1  RMSE=6.505  R2=-4.568  anomR2=-3.073
+  thermal optical+terrain       hist_gb  seed=2  RMSE=6.797  R2=-3.268  anomR2=-1.988
+  thermal optical+terrain       cnn      seed=2  RMSE=6.615  R2=-3.840  anomR2=-2.695
+
+== task: slope (deg)
+  slope   -                     mean     seed=0  RMSE=6.773  R2=-1.589  anomR2=-0.000
+  slope   optical               ridge    seed=0  RMSE=5.798  R2=-0.041  anomR2=0.089
+  slope   optical               hist_gb  seed=0  RMSE=4.835  R2=0.259  anomR2=0.292
+  slope   optical               cnn      seed=0  RMSE=4.331  R2=0.436  anomR2=0.426
+  slope   optical               hist_gb  seed=1  RMSE=4.831  R2=0.260  anomR2=0.291
+  slope   optical               cnn      seed=1  RMSE=4.073  R2=0.482  anomR2=0.440
+  slope   optical               hist_gb  seed=2  RMSE=4.827  R2=0.266  anomR2=0.298
+  slope   optical               cnn      seed=2  RMSE=4.221  R2=0.453  anomR2=0.419
+
+== leave-one-region-out (hist_gb, last variant per task)
+  thermal optical+terrain [LORO]hist_gb  seed=0  RMSE=6.266  R2=-3.157  anomR2=-1.536
+  thermal optical+terrain [LORO]mean     seed=0  RMSE=6.487  R2=-1.471  anomR2=-0.000
+  slope   optical [LORO]        hist_gb  seed=0  RMSE=4.114  R2=0.121  anomR2=0.239
+  slope   optical [LORO]        mean     seed=0  RMSE=6.026  R2=-2.369  anomR2=-0.000
+
+Saved C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\outputs\experiments\baseline_results.json

@@ -1,0 +1,71 @@
+
+Processing 1 region(s): ['copernicus']
+
+========================================================================
+  REGION : copernicus
+  NAME   : Copernicus Crater
+  EXTENT : 8.5-10.5N  339.0-341.0E
+========================================================================
+
+Step 1/8: extract_thermal  —  HTTP-stream Diviner window
+  [thermal] diviner_tbol_sam_pilot.npy already exists — skipping.
+  done in 0.0s
+
+Step 2/8: extract_dem  —  HTTP-stream LOLA window
+  [dem] lola_ldem256_pilot.npy already exists — skipping.
+  done in 0.0s
+
+Step 3/8: extract_optical  —  Extract WAC optical AOI
+  [optical] WAC file cached at C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\raw\optical\WAC_GLOBAL_E300N3150_100M.TIF
+  [optical] Extracting window  lat [8.5,10.5]  lon [339.0,341.0]
+  [optical] Saved C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\intermediate\copernicus\optical\wac_pilot.npy  shape=(606, 606)  dtype=uint8  min=0  max=230
+  done in 0.2s
+
+Step 4/8: create_grid  —  Define common grid
+  [grid] copernicus: 256x256 @ 128 PPD (236.90 m/px)  saved to C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\intermediate\copernicus\registration
+  done in 0.0s
+
+Step 5/8: harmonize  —  Harmonize all modalities
+  [harmonize] optical  shape=(256, 256)  coverage_mean=1.0000
+  [harmonize] DEM  shape=(256, 256)  valid=65536/65536  min=-3.6837 km  max=0.4997 km
+  [harmonize] thermal  shape=(256, 256)  valid=65536/65536  min=100.03  max=179.25
+  done in 0.4s
+
+Step 6/8: derive_terrain  —  Derive slope + hillshade
+  [terrain] slope    mean=7.172 deg  max=37.894 deg
+  [terrain] hillshade mean=0.6881
+  done in 0.1s
+
+Step 7/8: create_tiles  —  Create 16 synchronized tiles
+  [tiles] copernicus: 16 tiles (4x4 @ 64x64 px)  written to C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\benchmark\copernicus\tiles
+  done in 0.9s
+
+Step 8/8: validate  —  Validate + QC figures
+  [validate] Structural check ...
+  [validate] PASS — all 16 tiles structurally valid.
+  [validate] Cross-modal mutual information ...
+             MI(optical_vs_dem) = 0.178912 nats
+             MI(optical_vs_thermal) = 0.130567 nats
+             MI(dem_vs_thermal) = 0.123825 nats
+             MI(slope_vs_thermal) = 0.151151 nats
+             MI(hillshade_vs_thermal) = 0.106672 nats
+  [validate] Cross-modal edge alignment ...
+             Dice(optical_vs_dem_dice) = 0.2441
+             Dice(optical_vs_thermal_dice) = 0.2566
+             Dice(dem_vs_thermal_dice) = 0.2045
+  [validate] QC figures saved to C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\outputs\copernicus\validation
+  [validate] Report saved to C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\outputs\copernicus\validation\validation_report.json
+  done in 6.2s
+
+========================================================================
+  Region 'copernicus' completed in 7.7s
+========================================================================
+
+Updating global manifest for: ['copernicus']
+  [manifest] Updated entry for 'copernicus'.
+  [manifest] global_manifest.json updated — 20 region(s).
+
+========================================================================
+  SUMMARY
+  Success : ['copernicus']
+========================================================================

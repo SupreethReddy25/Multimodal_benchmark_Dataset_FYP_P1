@@ -1,0 +1,75 @@
+
+Processing 1 region(s): ['plato']
+
+========================================================================
+  REGION : plato
+  NAME   : Plato Crater
+  EXTENT : 50.5-52.5N  349.5-351.5E
+========================================================================
+
+Step 1/8: extract_thermal  —  HTTP-stream Diviner window
+  [thermal] Downloading Diviner window  rows 2240-2496, cols 44736-44992
+  Diviner rows:   0%|          | 0/256 [00:00<?, ?row/s]  Diviner rows:   0%|          | 1/256 [00:01<06:26,  1.51s/row]  Diviner rows:   2%|▏         | 6/256 [00:02<01:22,  3.02row/s]  Diviner rows:  11%|█▏        | 29/256 [00:02<00:12, 18.00row/s]  Diviner rows:  14%|█▍        | 36/256 [00:02<00:10, 20.50row/s]  Diviner rows:  16%|█▋        | 42/256 [00:03<00:11, 19.35row/s]  Diviner rows:  18%|█▊        | 46/256 [00:03<00:11, 17.52row/s]  Diviner rows:  21%|██        | 54/256 [00:03<00:10, 19.58row/s]  Diviner rows:  24%|██▍       | 62/256 [00:04<00:09, 21.22row/s]  Diviner rows:  27%|██▋       | 70/256 [00:04<00:08, 22.34row/s]  Diviner rows:  30%|███       | 77/256 [00:04<00:06, 26.16row/s]  Diviner rows:  32%|███▏      | 81/256 [00:04<00:06, 26.04row/s]  Diviner rows:  33%|███▎      | 85/256 [00:04<00:06, 24.69row/s]  Diviner rows:  34%|███▍      | 88/256 [00:04<00:06, 25.22row/s]  Diviner rows:  36%|███▋      | 93/256 [00:05<00:06, 24.65row/s]  Diviner rows:  38%|███▊      | 96/256 [00:05<00:06, 23.88row/s]  Diviner rows:  39%|███▉      | 101/256 [00:05<00:06, 24.94row/s]  Diviner rows:  41%|████      | 104/256 [00:05<00:06, 25.18row/s]  Diviner rows:  43%|████▎     | 109/256 [00:05<00:06, 24.16row/s]  Diviner rows:  44%|████▍     | 112/256 [00:05<00:05, 25.10row/s]  Diviner rows:  46%|████▌     | 117/256 [00:06<00:05, 24.34row/s]  Diviner rows:  47%|████▋     | 120/256 [00:06<00:05, 24.24row/s]  Diviner rows:  49%|████▉     | 125/256 [00:06<00:05, 24.44row/s]  Diviner rows:  51%|█████     | 130/256 [00:06<00:04, 28.71row/s]  Diviner rows:  52%|█████▏    | 134/256 [00:06<00:04, 25.19row/s]  Diviner rows:  54%|█████▍    | 138/256 [00:06<00:04, 27.58row/s]  Diviner rows:  55%|█████▌    | 141/256 [00:07<00:05, 22.15row/s]  Diviner rows:  57%|█████▋    | 147/256 [00:07<00:03, 27.57row/s]  Diviner rows:  59%|█████▉    | 151/256 [00:08<00:08, 12.04row/s]  Diviner rows:  65%|██████▌   | 167/256 [00:08<00:03, 27.00row/s]  Diviner rows:  68%|██████▊   | 173/256 [00:08<00:03, 26.69row/s]  Diviner rows:  70%|██████▉   | 178/256 [00:08<00:02, 26.17row/s]  Diviner rows:  71%|███████   | 182/256 [00:08<00:02, 26.29row/s]  Diviner rows:  73%|███████▎  | 186/256 [00:09<00:02, 23.96row/s]  Diviner rows:  74%|███████▍  | 190/256 [00:09<00:02, 26.32row/s]  Diviner rows:  76%|███████▌  | 194/256 [00:09<00:02, 23.56row/s]  Diviner rows:  77%|███████▋  | 197/256 [00:09<00:02, 24.17row/s]  Diviner rows:  78%|███████▊  | 200/256 [00:09<00:02, 21.01row/s]  Diviner rows:  80%|███████▉  | 204/256 [00:09<00:02, 23.03row/s]  Diviner rows:  81%|████████  | 207/256 [00:09<00:02, 23.82row/s]  Diviner rows:  82%|████████▏ | 210/256 [00:10<00:01, 23.45row/s]  Diviner rows:  84%|████████▎ | 214/256 [00:10<00:01, 25.51row/s]  Diviner rows:  85%|████████▍ | 217/256 [00:10<00:01, 26.38row/s]  Diviner rows:  86%|████████▌ | 220/256 [00:10<00:01, 24.58row/s]  Diviner rows:  87%|████████▋ | 223/256 [00:10<00:01, 22.80row/s]  Diviner rows:  88%|████████▊ | 226/256 [00:10<00:01, 21.78row/s]  Diviner rows:  90%|████████▉ | 230/256 [00:10<00:01, 23.00row/s]  Diviner rows:  91%|█████████▏| 234/256 [00:11<00:00, 23.76row/s]  Diviner rows:  93%|█████████▎| 238/256 [00:11<00:00, 24.43row/s]  Diviner rows:  95%|█████████▍| 242/256 [00:11<00:00, 23.98row/s]  Diviner rows:  96%|█████████▌| 246/256 [00:11<00:00, 25.47row/s]  Diviner rows:  98%|█████████▊| 250/256 [00:11<00:00, 24.47row/s]  Diviner rows:  99%|█████████▉| 254/256 [00:11<00:00, 26.06row/s]  Diviner rows: 100%|██████████| 256/256 [00:11<00:00, 21.46row/s]
+  [thermal] Saved C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\intermediate\plato\thermal\diviner_tbol_sam_pilot.npy  shape=(256, 256)  finite=65536/65536  nan=0
+  done in 12.0s
+
+Step 2/8: extract_dem  —  HTTP-stream LOLA window
+  [dem] Streaming LOLA window over HTTP  rows 9600-10112, cols 43392-43904
+  LOLA rows:   0%|          | 0/512 [00:00<?, ?row/s]  LOLA rows:   0%|          | 1/512 [00:01<13:18,  1.56s/row]  LOLA rows:   0%|          | 2/512 [00:01<06:00,  1.41row/s]  LOLA rows:   1%|          | 5/512 [00:02<03:05,  2.73row/s]  LOLA rows:   4%|▍         | 23/512 [00:02<00:28, 17.09row/s]  LOLA rows:   6%|▌         | 29/512 [00:02<00:24, 19.64row/s]  LOLA rows:   7%|▋         | 34/512 [00:02<00:24, 19.65row/s]  LOLA rows:   7%|▋         | 38/512 [00:03<00:23, 20.57row/s]  LOLA rows:   8%|▊         | 42/512 [00:03<00:21, 21.48row/s]  LOLA rows:   9%|▉         | 45/512 [00:03<00:22, 21.19row/s]  LOLA rows:   9%|▉         | 48/512 [00:03<00:20, 22.62row/s]  LOLA rows:  10%|▉         | 51/512 [00:03<00:19, 23.69row/s]  LOLA rows:  11%|█         | 54/512 [00:03<00:19, 23.21row/s]  LOLA rows:  11%|█▏        | 58/512 [00:03<00:18, 23.97row/s]  LOLA rows:  12%|█▏        | 61/512 [00:04<00:20, 21.89row/s]  LOLA rows:  13%|█▎        | 66/512 [00:04<00:17, 25.61row/s]  LOLA rows:  13%|█▎        | 69/512 [00:04<00:19, 22.52row/s]  LOLA rows:  14%|█▍        | 74/512 [00:04<00:16, 26.77row/s]  LOLA rows:  15%|█▌        | 77/512 [00:04<00:19, 21.93row/s]  LOLA rows:  16%|█▌        | 83/512 [00:04<00:17, 24.85row/s]  LOLA rows:  17%|█▋        | 86/512 [00:05<00:16, 25.50row/s]  LOLA rows:  18%|█▊        | 90/512 [00:05<00:14, 28.31row/s]  LOLA rows:  18%|█▊        | 94/512 [00:05<00:18, 22.24row/s]  LOLA rows:  19%|█▉        | 99/512 [00:05<00:16, 25.13row/s]  LOLA rows:  20%|█▉        | 102/512 [00:05<00:16, 25.18row/s]  LOLA rows:  21%|██        | 106/512 [00:05<00:14, 28.12row/s]  LOLA rows:  21%|██▏       | 110/512 [00:06<00:16, 24.57row/s]  LOLA rows:  22%|██▏       | 114/512 [00:06<00:15, 25.30row/s]  LOLA rows:  23%|██▎       | 117/512 [00:06<00:17, 23.21row/s]  LOLA rows:  24%|██▎       | 121/512 [00:06<00:15, 25.24row/s]  LOLA rows:  24%|██▍       | 124/512 [00:06<00:14, 26.25row/s]  LOLA rows:  25%|██▍       | 127/512 [00:06<00:15, 24.07row/s]  LOLA rows:  25%|██▌       | 130/512 [00:06<00:15, 24.55row/s]  LOLA rows:  26%|██▌       | 133/512 [00:06<00:16, 23.36row/s]  LOLA rows:  27%|██▋       | 137/512 [00:07<00:16, 22.54row/s]  LOLA rows:  27%|██▋       | 140/512 [00:07<00:15, 23.55row/s]  LOLA rows:  28%|██▊       | 143/512 [00:07<00:14, 24.63row/s]  LOLA rows:  29%|██▊       | 147/512 [00:07<00:14, 24.53row/s]  LOLA rows:  29%|██▉       | 151/512 [00:07<00:14, 25.16row/s]  LOLA rows:  30%|███       | 154/512 [00:07<00:13, 26.13row/s]  LOLA rows:  31%|███       | 157/512 [00:07<00:15, 23.40row/s]  LOLA rows:  31%|███▏      | 161/512 [00:08<00:15, 23.02row/s]  LOLA rows:  32%|███▏      | 165/512 [00:08<00:13, 25.04row/s]  LOLA rows:  33%|███▎      | 169/512 [00:08<00:15, 22.52row/s]  LOLA rows:  34%|███▍      | 173/512 [00:08<00:14, 23.98row/s]  LOLA rows:  35%|███▍      | 177/512 [00:08<00:14, 23.84row/s]  LOLA rows:  35%|███▌      | 181/512 [00:08<00:13, 24.87row/s]  LOLA rows:  36%|███▌      | 184/512 [00:09<00:12, 25.63row/s]  LOLA rows:  37%|███▋      | 187/512 [00:09<00:13, 24.37row/s]  LOLA rows:  37%|███▋      | 190/512 [00:09<00:14, 22.35row/s]  LOLA rows:  38%|███▊      | 193/512 [00:09<00:13, 23.35row/s]  LOLA rows:  39%|███▊      | 198/512 [00:09<00:13, 23.20row/s]  LOLA rows:  39%|███▉      | 201/512 [00:09<00:13, 22.95row/s]  LOLA rows:  40%|████      | 206/512 [00:10<00:13, 22.07row/s]  LOLA rows:  41%|████      | 209/512 [00:10<00:12, 23.39row/s]  LOLA rows:  42%|████▏     | 214/512 [00:10<00:12, 23.33row/s]  LOLA rows:  43%|████▎     | 218/512 [00:10<00:11, 24.94row/s]  LOLA rows:  43%|████▎     | 222/512 [00:10<00:11, 24.68row/s]  LOLA rows:  44%|████▍     | 225/512 [00:10<00:11, 25.01row/s]  LOLA rows:  45%|████▍     | 229/512 [00:10<00:11, 25.40row/s]  LOLA rows:  45%|████▌     | 232/512 [00:11<00:25, 11.11row/s]  LOLA rows:  47%|████▋     | 242/512 [00:12<00:18, 14.55row/s]  LOLA rows:  48%|████▊     | 244/512 [00:12<00:18, 14.13row/s]  LOLA rows:  49%|████▉     | 252/512 [00:12<00:18, 14.37row/s]  LOLA rows:  50%|████▉     | 254/512 [00:13<00:21, 12.19row/s]  LOLA rows:  51%|█████     | 261/512 [00:13<00:15, 16.08row/s]  LOLA rows:  52%|█████▏    | 265/512 [00:14<00:21, 11.60row/s]  LOLA rows:  53%|█████▎    | 272/512 [00:14<00:15, 15.30row/s]  LOLA rows:  54%|█████▍    | 278/512 [00:14<00:14, 15.72row/s]  LOLA rows:  56%|█████▋    | 288/512 [00:15<00:16, 13.79row/s]  LOLA rows:  57%|█████▋    | 294/512 [00:15<00:15, 14.17row/s]  LOLA rows:  58%|█████▊    | 298/512 [00:16<00:15, 13.80row/s]  LOLA rows:  59%|█████▊    | 300/512 [00:16<00:17, 12.07row/s]  LOLA rows:  61%|██████    | 312/512 [00:17<00:12, 15.41row/s]  LOLA rows:  62%|██████▏   | 318/512 [00:17<00:11, 17.27row/s]  LOLA rows:  63%|██████▎   | 321/512 [00:17<00:11, 16.72row/s]  LOLA rows:  64%|██████▍   | 330/512 [00:17<00:07, 24.25row/s]  LOLA rows:  65%|██████▌   | 334/512 [00:18<00:08, 20.03row/s]  LOLA rows:  66%|██████▌   | 337/512 [00:18<00:08, 20.86row/s]  LOLA rows:  66%|██████▋   | 340/512 [00:19<00:25,  6.87row/s]  LOLA rows:  68%|██████▊   | 350/512 [00:19<00:13, 11.83row/s]  LOLA rows:  70%|██████▉   | 356/512 [00:20<00:10, 14.95row/s]  LOLA rows:  71%|███████   | 363/512 [00:20<00:08, 16.76row/s]  LOLA rows:  71%|███████▏  | 366/512 [00:20<00:10, 14.17row/s]  LOLA rows:  72%|███████▏  | 369/512 [00:20<00:09, 14.46row/s]  LOLA rows:  73%|███████▎  | 372/512 [00:21<00:09, 14.92row/s]  LOLA rows:  73%|███████▎  | 375/512 [00:21<00:08, 16.36row/s]  LOLA rows:  74%|███████▍  | 378/512 [00:21<00:10, 12.67row/s]  LOLA rows:  74%|███████▍  | 380/512 [00:22<00:13,  9.53row/s]  LOLA rows:  76%|███████▌  | 388/512 [00:22<00:08, 14.14row/s]  LOLA rows:  77%|███████▋  | 395/512 [00:22<00:07, 15.16row/s]  LOLA rows:  78%|███████▊  | 398/512 [00:23<00:09, 12.26row/s]  LOLA rows:  79%|███████▉  | 405/512 [00:23<00:06, 17.59row/s]  LOLA rows:  80%|███████▉  | 408/512 [00:23<00:06, 16.28row/s]  LOLA rows:  81%|████████▏ | 416/512 [00:23<00:04, 21.29row/s]  LOLA rows:  82%|████████▏ | 419/512 [00:24<00:06, 15.30row/s]  LOLA rows:  84%|████████▎ | 428/512 [00:24<00:05, 16.20row/s]  LOLA rows:  85%|████████▍ | 435/512 [00:25<00:04, 16.54row/s]  LOLA rows:  85%|████████▌ | 437/512 [00:25<00:04, 15.55row/s]  LOLA rows:  86%|████████▌ | 439/512 [00:26<00:07,  9.87row/s]  LOLA rows:  87%|████████▋ | 447/512 [00:26<00:04, 14.18row/s]  LOLA rows:  89%|████████▊ | 454/512 [00:26<00:03, 14.89row/s]  LOLA rows:  89%|████████▉ | 458/512 [00:27<00:03, 14.06row/s]  LOLA rows:  90%|█████████ | 461/512 [00:27<00:03, 14.93row/s]  LOLA rows:  91%|█████████▏| 468/512 [00:27<00:02, 17.29row/s]  LOLA rows:  92%|█████████▏| 470/512 [00:27<00:02, 17.04row/s]  LOLA rows:  93%|█████████▎| 474/512 [00:27<00:02, 15.63row/s]  LOLA rows:  93%|█████████▎| 476/512 [00:28<00:02, 15.19row/s]  LOLA rows:  93%|█████████▎| 478/512 [00:28<00:02, 15.86row/s]  LOLA rows:  94%|█████████▍| 480/512 [00:28<00:02, 13.88row/s]  LOLA rows:  95%|█████████▌| 488/512 [00:28<00:00, 25.53row/s]  LOLA rows:  96%|█████████▋| 493/512 [00:28<00:01, 17.59row/s]  LOLA rows:  98%|█████████▊| 501/512 [00:29<00:00, 14.88row/s]  LOLA rows:  99%|█████████▉| 507/512 [00:29<00:00, 17.46row/s]  LOLA rows: 100%|██████████| 512/512 [00:29<00:00, 21.04row/s]  LOLA rows: 100%|██████████| 512/512 [00:29<00:00, 17.09row/s]
+  [dem] Saved C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\intermediate\plato\dem\lola_ldem256_pilot.npy  shape=(512, 512)  finite=262144/262144  min=-2.9282 km  max=-2.3489 km
+  done in 30.0s
+
+Step 3/8: extract_optical  —  Extract WAC optical AOI
+  [optical] WAC file cached at C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\raw\optical\WAC_GLOBAL_E300N3150_100M.TIF
+  [optical] Extracting window  lat [50.5,52.5]  lon [349.5,351.5]
+  [optical] Saved C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\intermediate\plato\optical\wac_pilot.npy  shape=(606, 606)  dtype=uint8  min=0  max=118
+  done in 0.2s
+
+Step 4/8: create_grid  —  Define common grid
+  [grid] plato: 256x256 @ 128 PPD (236.90 m/px)  saved to C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\intermediate\plato\registration
+  done in 0.0s
+
+Step 5/8: harmonize  —  Harmonize all modalities
+  [harmonize] optical  shape=(256, 256)  coverage_mean=0.9978
+  [harmonize] DEM  shape=(256, 256)  valid=65536/65536  min=-2.9202 km  max=-2.3524 km
+  [harmonize] thermal  shape=(256, 256)  valid=65536/65536  min=88.79  max=160.97
+  done in 0.2s
+
+Step 6/8: derive_terrain  —  Derive slope + hillshade
+  [terrain] slope    mean=0.667 deg  max=31.806 deg
+  [terrain] hillshade mean=0.7061
+  done in 0.0s
+
+Step 7/8: create_tiles  —  Create 16 synchronized tiles
+  [tiles] plato: 16 tiles (4x4 @ 64x64 px)  written to C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\benchmark\plato\tiles
+  done in 0.5s
+
+Step 8/8: validate  —  Validate + QC figures
+  [validate] Structural check ...
+  [validate] PASS — all 16 tiles structurally valid.
+  [validate] Cross-modal mutual information ...
+             MI(optical_vs_dem) = 0.148743 nats
+             MI(optical_vs_thermal) = 0.069688 nats
+             MI(dem_vs_thermal) = 0.039657 nats
+             MI(slope_vs_thermal) = 0.106586 nats
+             MI(hillshade_vs_thermal) = 0.085380 nats
+  [validate] Cross-modal edge alignment ...
+             Dice(optical_vs_dem_dice) = 0.4464
+             Dice(optical_vs_thermal_dice) = 0.4196
+             Dice(dem_vs_thermal_dice) = 0.4103
+  [validate] QC figures saved to C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\outputs\plato\validation
+  [validate] Report saved to C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\outputs\plato\validation\validation_report.json
+  done in 2.7s
+
+========================================================================
+  Region 'plato' completed in 45.6s
+========================================================================
+
+Updating global manifest for: ['plato']
+  [manifest] Updated entry for 'plato'.
+  [manifest] global_manifest.json updated — 23 region(s).
+
+========================================================================
+  SUMMARY
+  Success : ['plato']
+========================================================================

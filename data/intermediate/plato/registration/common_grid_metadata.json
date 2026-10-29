@@ -1,0 +1,44 @@
+{
+  "name": "plato_common_grid_v1",
+  "region_id": "plato",
+  "projection": {
+    "type": "Equirectangular",
+    "central_meridian_deg": 180.0,
+    "standard_parallel_deg": 0.0,
+    "lunar_radius_m": 1737400.0
+  },
+  "extent": {
+    "latitude_min_deg": 50.5,
+    "latitude_max_deg": 52.5,
+    "longitude_min_deg": 349.5,
+    "longitude_max_deg": 351.5
+  },
+  "resolution": {
+    "pixels_per_degree": 128,
+    "nominal_m_per_pixel": 236.9011751886676
+  },
+  "shape": {
+    "height": 256,
+    "width": 256
+  },
+  "pixel_convention": {
+    "origin": "upper_left",
+    "coordinates": "pixel_centers",
+    "latitude_direction": "north_to_south",
+    "longitude_direction": "west_to_east"
+  },
+  "center_coordinates": {
+    "first_pixel": {
+      "longitude_deg": 349.50390625,
+      "latitude_deg": 52.49609375,
+      "x_m": 10598129.423827838,
+      "y_m": 1591857.4466802536
+    },
+    "last_pixel": {
+      "longitude_deg": 351.49609375,
+      "latitude_deg": 50.50390625,
+      "x_m": 10658539.223500948,
+      "y_m": 1531447.6470071431
+    }
+  }
+}

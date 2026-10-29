@@ -1,0 +1,44 @@
+{
+  "name": "atlas_common_grid_v1",
+  "region_id": "atlas",
+  "projection": {
+    "type": "Equirectangular",
+    "central_meridian_deg": 180.0,
+    "standard_parallel_deg": 0.0,
+    "lunar_radius_m": 1737400.0
+  },
+  "extent": {
+    "latitude_min_deg": 46.0,
+    "latitude_max_deg": 48.0,
+    "longitude_min_deg": 43.0,
+    "longitude_max_deg": 45.0
+  },
+  "resolution": {
+    "pixels_per_degree": 128,
+    "nominal_m_per_pixel": 236.9011751886676
+  },
+  "shape": {
+    "height": 256,
+    "width": 256
+  },
+  "pixel_convention": {
+    "origin": "upper_left",
+    "coordinates": "pixel_centers",
+    "latitude_direction": "north_to_south",
+    "longitude_direction": "west_to_east"
+  },
+  "center_coordinates": {
+    "first_pixel": {
+      "longitude_deg": 43.00390625,
+      "latitude_deg": 47.99609375,
+      "x_m": 1304022.518826022,
+      "y_m": 1455402.369771581
+    },
+    "last_pixel": {
+      "longitude_deg": 44.99609375,
+      "latitude_deg": 46.00390625,
+      "x_m": 1364432.3184991323,
+      "y_m": 1394992.5700984704
+    }
+  }
+}

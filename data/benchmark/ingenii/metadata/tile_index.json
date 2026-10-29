@@ -1,0 +1,1259 @@
+{
+  "dataset": "Multimodal Lunar Benchmark",
+  "version": "1.0.0",
+  "region_id": "ingenii",
+  "region_name": "Mare Ingenii (farside swirls)",
+  "pilot_region": {
+    "latitude_min_deg": -34.5,
+    "latitude_max_deg": -32.5,
+    "longitude_min_deg": 162.5,
+    "longitude_max_deg": 164.5
+  },
+  "common_grid": {
+    "height": 256,
+    "width": 256,
+    "pixels_per_degree": 128,
+    "nominal_m_per_pixel": 236.9011751886676
+  },
+  "tiling": {
+    "tile_size_pixels": 64,
+    "overlap_pixels": 0,
+    "rows": 4,
+    "columns": 4,
+    "total_tiles": 16
+  },
+  "tiles": [
+    {
+      "tile_id": "tile_00_00",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 0,
+        "column": 0
+      },
+      "pixel_window": {
+        "row_start": 0,
+        "row_end_exclusive": 64,
+        "column_start": 0,
+        "column_end_exclusive": 64
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 162.50390625,
+        "longitude_max_deg": 162.99609375,
+        "latitude_min_deg": -32.99609375,
+        "latitude_max_deg": -32.50390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 162.50390625,
+          "latitude_deg": -32.50390625
+        },
+        "last_pixel": {
+          "longitude_deg": 162.99609375,
+          "latitude_deg": -32.99609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_00_01",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 0,
+        "column": 1
+      },
+      "pixel_window": {
+        "row_start": 0,
+        "row_end_exclusive": 64,
+        "column_start": 64,
+        "column_end_exclusive": 128
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 163.00390625,
+        "longitude_max_deg": 163.49609375,
+        "latitude_min_deg": -32.99609375,
+        "latitude_max_deg": -32.50390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 163.00390625,
+          "latitude_deg": -32.50390625
+        },
+        "last_pixel": {
+          "longitude_deg": 163.49609375,
+          "latitude_deg": -32.99609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_00_02",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 0,
+        "column": 2
+      },
+      "pixel_window": {
+        "row_start": 0,
+        "row_end_exclusive": 64,
+        "column_start": 128,
+        "column_end_exclusive": 192
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 163.50390625,
+        "longitude_max_deg": 163.99609375,
+        "latitude_min_deg": -32.99609375,
+        "latitude_max_deg": -32.50390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 163.50390625,
+          "latitude_deg": -32.50390625
+        },
+        "last_pixel": {
+          "longitude_deg": 163.99609375,
+          "latitude_deg": -32.99609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_00_03",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 0,
+        "column": 3
+      },
+      "pixel_window": {
+        "row_start": 0,
+        "row_end_exclusive": 64,
+        "column_start": 192,
+        "column_end_exclusive": 256
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 164.00390625,
+        "longitude_max_deg": 164.49609375,
+        "latitude_min_deg": -32.99609375,
+        "latitude_max_deg": -32.50390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 164.00390625,
+          "latitude_deg": -32.50390625
+        },
+        "last_pixel": {
+          "longitude_deg": 164.49609375,
+          "latitude_deg": -32.99609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_01_00",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 1,
+        "column": 0
+      },
+      "pixel_window": {
+        "row_start": 64,
+        "row_end_exclusive": 128,
+        "column_start": 0,
+        "column_end_exclusive": 64
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 162.50390625,
+        "longitude_max_deg": 162.99609375,
+        "latitude_min_deg": -33.49609375,
+        "latitude_max_deg": -33.00390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 162.50390625,
+          "latitude_deg": -33.00390625
+        },
+        "last_pixel": {
+          "longitude_deg": 162.99609375,
+          "latitude_deg": -33.49609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_01_01",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 1,
+        "column": 1
+      },
+      "pixel_window": {
+        "row_start": 64,
+        "row_end_exclusive": 128,
+        "column_start": 64,
+        "column_end_exclusive": 128
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 163.00390625,
+        "longitude_max_deg": 163.49609375,
+        "latitude_min_deg": -33.49609375,
+        "latitude_max_deg": -33.00390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 163.00390625,
+          "latitude_deg": -33.00390625
+        },
+        "last_pixel": {
+          "longitude_deg": 163.49609375,
+          "latitude_deg": -33.49609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_01_02",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 1,
+        "column": 2
+      },
+      "pixel_window": {
+        "row_start": 64,
+        "row_end_exclusive": 128,
+        "column_start": 128,
+        "column_end_exclusive": 192
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 163.50390625,
+        "longitude_max_deg": 163.99609375,
+        "latitude_min_deg": -33.49609375,
+        "latitude_max_deg": -33.00390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 163.50390625,
+          "latitude_deg": -33.00390625
+        },
+        "last_pixel": {
+          "longitude_deg": 163.99609375,
+          "latitude_deg": -33.49609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_01_03",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 1,
+        "column": 3
+      },
+      "pixel_window": {
+        "row_start": 64,
+        "row_end_exclusive": 128,
+        "column_start": 192,
+        "column_end_exclusive": 256
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 164.00390625,
+        "longitude_max_deg": 164.49609375,
+        "latitude_min_deg": -33.49609375,
+        "latitude_max_deg": -33.00390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 164.00390625,
+          "latitude_deg": -33.00390625
+        },
+        "last_pixel": {
+          "longitude_deg": 164.49609375,
+          "latitude_deg": -33.49609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_02_00",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 2,
+        "column": 0
+      },
+      "pixel_window": {
+        "row_start": 128,
+        "row_end_exclusive": 192,
+        "column_start": 0,
+        "column_end_exclusive": 64
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 162.50390625,
+        "longitude_max_deg": 162.99609375,
+        "latitude_min_deg": -33.99609375,
+        "latitude_max_deg": -33.50390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 162.50390625,
+          "latitude_deg": -33.50390625
+        },
+        "last_pixel": {
+          "longitude_deg": 162.99609375,
+          "latitude_deg": -33.99609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_02_01",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 2,
+        "column": 1
+      },
+      "pixel_window": {
+        "row_start": 128,
+        "row_end_exclusive": 192,
+        "column_start": 64,
+        "column_end_exclusive": 128
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 163.00390625,
+        "longitude_max_deg": 163.49609375,
+        "latitude_min_deg": -33.99609375,
+        "latitude_max_deg": -33.50390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 163.00390625,
+          "latitude_deg": -33.50390625
+        },
+        "last_pixel": {
+          "longitude_deg": 163.49609375,
+          "latitude_deg": -33.99609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_02_02",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 2,
+        "column": 2
+      },
+      "pixel_window": {
+        "row_start": 128,
+        "row_end_exclusive": 192,
+        "column_start": 128,
+        "column_end_exclusive": 192
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 163.50390625,
+        "longitude_max_deg": 163.99609375,
+        "latitude_min_deg": -33.99609375,
+        "latitude_max_deg": -33.50390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 163.50390625,
+          "latitude_deg": -33.50390625
+        },
+        "last_pixel": {
+          "longitude_deg": 163.99609375,
+          "latitude_deg": -33.99609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_02_03",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 2,
+        "column": 3
+      },
+      "pixel_window": {
+        "row_start": 128,
+        "row_end_exclusive": 192,
+        "column_start": 192,
+        "column_end_exclusive": 256
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 164.00390625,
+        "longitude_max_deg": 164.49609375,
+        "latitude_min_deg": -33.99609375,
+        "latitude_max_deg": -33.50390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 164.00390625,
+          "latitude_deg": -33.50390625
+        },
+        "last_pixel": {
+          "longitude_deg": 164.49609375,
+          "latitude_deg": -33.99609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_03_00",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 3,
+        "column": 0
+      },
+      "pixel_window": {
+        "row_start": 192,
+        "row_end_exclusive": 256,
+        "column_start": 0,
+        "column_end_exclusive": 64
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 162.50390625,
+        "longitude_max_deg": 162.99609375,
+        "latitude_min_deg": -34.49609375,
+        "latitude_max_deg": -34.00390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 162.50390625,
+          "latitude_deg": -34.00390625
+        },
+        "last_pixel": {
+          "longitude_deg": 162.99609375,
+          "latitude_deg": -34.49609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_03_01",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 3,
+        "column": 1
+      },
+      "pixel_window": {
+        "row_start": 192,
+        "row_end_exclusive": 256,
+        "column_start": 64,
+        "column_end_exclusive": 128
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 163.00390625,
+        "longitude_max_deg": 163.49609375,
+        "latitude_min_deg": -34.49609375,
+        "latitude_max_deg": -34.00390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 163.00390625,
+          "latitude_deg": -34.00390625
+        },
+        "last_pixel": {
+          "longitude_deg": 163.49609375,
+          "latitude_deg": -34.49609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_03_02",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 3,
+        "column": 2
+      },
+      "pixel_window": {
+        "row_start": 192,
+        "row_end_exclusive": 256,
+        "column_start": 128,
+        "column_end_exclusive": 192
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 163.50390625,
+        "longitude_max_deg": 163.99609375,
+        "latitude_min_deg": -34.49609375,
+        "latitude_max_deg": -34.00390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 163.50390625,
+          "latitude_deg": -34.00390625
+        },
+        "last_pixel": {
+          "longitude_deg": 163.99609375,
+          "latitude_deg": -34.49609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    },
+    {
+      "tile_id": "tile_03_03",
+      "region_id": "ingenii",
+      "tile_index": {
+        "row": 3,
+        "column": 3
+      },
+      "pixel_window": {
+        "row_start": 192,
+        "row_end_exclusive": 256,
+        "column_start": 192,
+        "column_end_exclusive": 256
+      },
+      "shape": {
+        "height": 64,
+        "width": 64
+      },
+      "spatial_resolution": {
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "geographic_extent": {
+        "longitude_min_deg": 164.00390625,
+        "longitude_max_deg": 164.49609375,
+        "latitude_min_deg": -34.49609375,
+        "latitude_max_deg": -34.00390625
+      },
+      "pixel_center_coordinates": {
+        "first_pixel": {
+          "longitude_deg": 164.00390625,
+          "latitude_deg": -34.00390625
+        },
+        "last_pixel": {
+          "longitude_deg": 164.49609375,
+          "latitude_deg": -34.49609375
+        }
+      },
+      "common_grid": {
+        "name": "ingenii_common_grid_v1",
+        "projection": {
+          "type": "Equirectangular",
+          "central_meridian_deg": 180.0,
+          "standard_parallel_deg": 0.0,
+          "lunar_radius_m": 1737400.0
+        }
+      },
+      "modalities": {
+        "optical": {
+          "file": "optical.npy",
+          "source": "LROC WAC"
+        },
+        "dem": {
+          "file": "dem.npy",
+          "source": "LRO LOLA"
+        },
+        "thermal": {
+          "file": "thermal.npy",
+          "source": "LRO Diviner"
+        }
+      },
+      "derived_products": {
+        "slope": "slope.npy",
+        "hillshade": "hillshade.npy"
+      },
+      "validity_products": {
+        "optical_coverage": "optical_coverage.npy",
+        "dem_valid_mask": "dem_valid_mask.npy",
+        "dem_coverage": "dem_coverage.npy",
+        "thermal_valid_mask": "thermal_valid_mask.npy",
+        "thermal_coverage": "thermal_coverage.npy"
+      },
+      "tile_generation": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "pixel_correspondence_preserved": true
+      }
+    }
+  ]
+}

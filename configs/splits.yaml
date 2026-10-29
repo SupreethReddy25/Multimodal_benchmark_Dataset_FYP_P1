@@ -1,0 +1,42 @@
+# ===========================================================================
+# Official region-level splits (v1.2, 28 regions)
+# ---------------------------------------------------------------------------
+# Splits are by REGION, never by tile: neighbouring tiles share terrain and
+# illumination, so random tile splits would leak.  The test set deliberately
+# contains out-of-distribution geography (southern highland crater, farside
+# crater, farside mare, farside highland basin, bright-ray crater, Apollo-17
+# massifs, a young nearside mare crater and a farside swirl mare) that no
+# training region resembles.
+# ===========================================================================
+seed: 0
+train:
+  - lacus_mortis
+  - posidonius
+  - montes_apenninus
+  - aristoteles
+  - tranquillitatis
+  - proclus
+  - atlas
+  - humboldtianum
+  - descartes
+  - aristarchus
+  - orientale
+  - fra_mauro
+  - sinus_iridum
+  - kepler
+  - grimaldi
+  - alphonsus
+  - apollo_basin
+val:
+  - hyginus
+  - endymion
+  - plato
+test:
+  - taurus_littrow
+  - mare_crisium
+  - tycho
+  - tsiolkovsky
+  - copernicus
+  - ingenii
+  - moscoviense
+  - korolev

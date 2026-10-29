@@ -1,0 +1,75 @@
+
+Processing 1 region(s): ['alphonsus']
+
+========================================================================
+  REGION : alphonsus
+  NAME   : Alphonsus Crater
+  EXTENT : -14.5--12.5N  356.0-358.0E
+========================================================================
+
+Step 1/8: extract_thermal  —  HTTP-stream Diviner window
+  [thermal] Downloading Diviner window  rows 10560-10816, cols 45568-45824
+  Diviner rows:   0%|          | 0/256 [00:00<?, ?row/s]  Diviner rows:   0%|          | 1/256 [00:01<06:21,  1.50s/row]  Diviner rows:   3%|▎         | 7/256 [00:02<01:05,  3.82row/s]  Diviner rows:   9%|▉         | 23/256 [00:02<00:15, 15.49row/s]  Diviner rows:  12%|█▏        | 31/256 [00:02<00:12, 17.94row/s]  Diviner rows:  14%|█▍        | 37/256 [00:02<00:11, 19.73row/s]  Diviner rows:  16%|█▋        | 42/256 [00:03<00:10, 20.08row/s]  Diviner rows:  18%|█▊        | 47/256 [00:03<00:10, 19.76row/s]  Diviner rows:  21%|██        | 53/256 [00:03<00:10, 18.90row/s]  Diviner rows:  24%|██▍       | 61/256 [00:04<00:09, 21.15row/s]  Diviner rows:  25%|██▌       | 65/256 [00:04<00:08, 23.46row/s]  Diviner rows:  27%|██▋       | 69/256 [00:04<00:08, 21.67row/s]  Diviner rows:  29%|██▉       | 74/256 [00:04<00:07, 24.13row/s]  Diviner rows:  30%|███       | 77/256 [00:04<00:08, 20.18row/s]  Diviner rows:  33%|███▎      | 84/256 [00:04<00:06, 25.85row/s]  Diviner rows:  34%|███▍      | 87/256 [00:05<00:10, 16.38row/s]  Diviner rows:  37%|███▋      | 94/256 [00:05<00:07, 22.45row/s]  Diviner rows:  38%|███▊      | 98/256 [00:05<00:07, 22.56row/s]  Diviner rows:  40%|███▉      | 102/256 [00:05<00:06, 23.48row/s]  Diviner rows:  41%|████▏     | 106/256 [00:05<00:06, 23.94row/s]  Diviner rows:  43%|████▎     | 110/256 [00:06<00:06, 22.16row/s]  Diviner rows:  45%|████▍     | 114/256 [00:06<00:05, 25.21row/s]  Diviner rows:  46%|████▌     | 117/256 [00:06<00:07, 17.55row/s]  Diviner rows:  48%|████▊     | 123/256 [00:06<00:06, 19.53row/s]  Diviner rows:  50%|████▉     | 127/256 [00:07<00:05, 21.98row/s]  Diviner rows:  51%|█████     | 131/256 [00:07<00:06, 20.77row/s]  Diviner rows:  52%|█████▏    | 134/256 [00:07<00:05, 21.36row/s]  Diviner rows:  54%|█████▍    | 139/256 [00:07<00:05, 22.35row/s]  Diviner rows:  55%|█████▌    | 142/256 [00:07<00:04, 23.28row/s]  Diviner rows:  57%|█████▋    | 147/256 [00:07<00:04, 23.45row/s]  Diviner rows:  59%|█████▉    | 151/256 [00:07<00:03, 26.33row/s]  Diviner rows:  60%|██████    | 154/256 [00:08<00:03, 26.84row/s]  Diviner rows:  61%|██████▏   | 157/256 [00:08<00:03, 27.11row/s]  Diviner rows:  62%|██████▎   | 160/256 [00:08<00:03, 27.64row/s]  Diviner rows:  64%|██████▎   | 163/256 [00:08<00:04, 21.71row/s]  Diviner rows:  66%|██████▌   | 168/256 [00:08<00:03, 27.25row/s]  Diviner rows:  67%|██████▋   | 172/256 [00:08<00:03, 25.26row/s]  Diviner rows:  69%|██████▉   | 176/256 [00:08<00:02, 27.20row/s]  Diviner rows:  70%|██████▉   | 179/256 [00:09<00:03, 22.37row/s]  Diviner rows:  72%|███████▏  | 184/256 [00:09<00:02, 25.66row/s]  Diviner rows:  73%|███████▎  | 187/256 [00:09<00:02, 23.25row/s]  Diviner rows:  75%|███████▌  | 192/256 [00:09<00:03, 16.78row/s]  Diviner rows:  76%|███████▌  | 195/256 [00:10<00:05, 11.87row/s]  Diviner rows:  82%|████████▏ | 211/256 [00:10<00:01, 28.43row/s]  Diviner rows:  84%|████████▍ | 216/256 [00:10<00:01, 26.93row/s]  Diviner rows:  86%|████████▋ | 221/256 [00:10<00:01, 26.97row/s]  Diviner rows:  88%|████████▊ | 225/256 [00:11<00:01, 24.84row/s]  Diviner rows:  89%|████████▉ | 229/256 [00:11<00:01, 26.78row/s]  Diviner rows:  91%|█████████ | 233/256 [00:11<00:00, 24.83row/s]  Diviner rows:  93%|█████████▎| 237/256 [00:11<00:00, 26.48row/s]  Diviner rows:  94%|█████████▍| 241/256 [00:11<00:00, 23.84row/s]  Diviner rows:  96%|█████████▋| 247/256 [00:11<00:00, 26.53row/s]  Diviner rows:  98%|█████████▊| 250/256 [00:12<00:00, 26.12row/s]  Diviner rows: 100%|█████████▉| 255/256 [00:12<00:00, 26.73row/s]  Diviner rows: 100%|██████████| 256/256 [00:12<00:00, 20.72row/s]
+  [thermal] Saved C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\intermediate\alphonsus\thermal\diviner_tbol_sam_pilot.npy  shape=(256, 256)  finite=65536/65536  nan=0
+  done in 12.5s
+
+Step 2/8: extract_dem  —  HTTP-stream LOLA window
+  [dem] Streaming LOLA window over HTTP  rows 3200-3712, cols 45056-45568
+  LOLA rows:   0%|          | 0/512 [00:00<?, ?row/s]  LOLA rows:   0%|          | 1/512 [00:01<13:40,  1.61s/row]  LOLA rows:   1%|▏         | 7/512 [00:02<02:17,  3.68row/s]  LOLA rows:   4%|▍         | 23/512 [00:02<00:33, 14.59row/s]  LOLA rows:   6%|▌         | 29/512 [00:02<00:27, 17.59row/s]  LOLA rows:   7%|▋         | 34/512 [00:02<00:27, 17.21row/s]  LOLA rows:   8%|▊         | 39/512 [00:03<00:24, 19.54row/s]  LOLA rows:   8%|▊         | 43/512 [00:03<00:22, 20.82row/s]  LOLA rows:   9%|▉         | 47/512 [00:03<00:20, 22.20row/s]  LOLA rows:  10%|▉         | 51/512 [00:03<00:23, 19.75row/s]  LOLA rows:  11%|█         | 56/512 [00:03<00:21, 21.53row/s]  LOLA rows:  12%|█▏        | 59/512 [00:04<00:22, 20.42row/s]  LOLA rows:  12%|█▎        | 64/512 [00:04<00:19, 23.45row/s]  LOLA rows:  13%|█▎        | 67/512 [00:04<00:20, 22.16row/s]  LOLA rows:  14%|█▍        | 72/512 [00:04<00:17, 25.40row/s]  LOLA rows:  15%|█▍        | 75/512 [00:04<00:20, 21.81row/s]  LOLA rows:  16%|█▌        | 81/512 [00:04<00:16, 26.17row/s]  LOLA rows:  16%|█▋        | 84/512 [00:04<00:17, 24.40row/s]  LOLA rows:  17%|█▋        | 89/512 [00:05<00:15, 27.30row/s]  LOLA rows:  18%|█▊        | 92/512 [00:05<00:17, 24.38row/s]  LOLA rows:  19%|█▉        | 97/512 [00:05<00:14, 27.95row/s]  LOLA rows:  20%|█▉        | 100/512 [00:05<00:19, 20.97row/s]  LOLA rows:  21%|██        | 106/512 [00:05<00:14, 27.56row/s]  LOLA rows:  21%|██▏       | 110/512 [00:06<00:17, 23.61row/s]  LOLA rows:  22%|██▏       | 115/512 [00:06<00:16, 24.74row/s]  LOLA rows:  23%|██▎       | 118/512 [00:06<00:16, 23.34row/s]  LOLA rows:  24%|██▍       | 123/512 [00:06<00:14, 26.10row/s]  LOLA rows:  25%|██▍       | 126/512 [00:06<00:17, 22.69row/s]  LOLA rows:  26%|██▌       | 131/512 [00:06<00:14, 26.31row/s]  LOLA rows:  26%|██▌       | 134/512 [00:07<00:16, 22.91row/s]  LOLA rows:  27%|██▋       | 139/512 [00:07<00:13, 27.45row/s]  LOLA rows:  28%|██▊       | 142/512 [00:07<00:15, 24.37row/s]  LOLA rows:  29%|██▊       | 147/512 [00:07<00:13, 27.81row/s]  LOLA rows:  29%|██▉       | 150/512 [00:07<00:14, 24.57row/s]  LOLA rows:  30%|███       | 155/512 [00:07<00:12, 28.02row/s]  LOLA rows:  31%|███       | 158/512 [00:07<00:14, 24.50row/s]  LOLA rows:  32%|███▏      | 163/512 [00:08<00:12, 27.94row/s]  LOLA rows:  32%|███▏      | 166/512 [00:08<00:14, 23.45row/s]  LOLA rows:  33%|███▎      | 171/512 [00:08<00:11, 28.84row/s]  LOLA rows:  34%|███▍      | 175/512 [00:08<00:14, 23.98row/s]  LOLA rows:  35%|███▌      | 180/512 [00:08<00:12, 25.75row/s]  LOLA rows:  36%|███▌      | 183/512 [00:08<00:13, 24.44row/s]  LOLA rows:  37%|███▋      | 187/512 [00:09<00:11, 27.42row/s]  LOLA rows:  37%|███▋      | 190/512 [00:09<00:13, 24.73row/s]  LOLA rows:  38%|███▊      | 194/512 [00:09<00:11, 28.11row/s]  LOLA rows:  39%|███▊      | 198/512 [00:09<00:12, 24.35row/s]  LOLA rows:  39%|███▉      | 202/512 [00:09<00:11, 26.51row/s]  LOLA rows:  40%|████      | 205/512 [00:09<00:12, 24.20row/s]  LOLA rows:  41%|████      | 209/512 [00:09<00:12, 24.40row/s]  LOLA rows:  41%|████▏     | 212/512 [00:10<00:11, 25.51row/s]  LOLA rows:  42%|████▏     | 215/512 [00:10<00:11, 25.55row/s]  LOLA rows:  43%|████▎     | 218/512 [00:10<00:12, 23.45row/s]  LOLA rows:  43%|████▎     | 221/512 [00:10<00:11, 24.51row/s]  LOLA rows:  44%|████▍     | 225/512 [00:10<00:11, 25.17row/s]  LOLA rows:  45%|████▍     | 229/512 [00:10<00:11, 25.15row/s]  LOLA rows:  45%|████▌     | 232/512 [00:10<00:11, 24.05row/s]  LOLA rows:  46%|████▋     | 237/512 [00:11<00:11, 23.20row/s]  LOLA rows:  47%|████▋     | 240/512 [00:11<00:12, 22.54row/s]  LOLA rows:  48%|████▊     | 245/512 [00:11<00:10, 24.55row/s]  LOLA rows:  48%|████▊     | 248/512 [00:11<00:11, 23.89row/s]  LOLA rows:  49%|████▉     | 253/512 [00:11<00:10, 23.84row/s]  LOLA rows:  50%|█████     | 258/512 [00:11<00:10, 24.36row/s]  LOLA rows:  51%|█████     | 262/512 [00:12<00:09, 27.33row/s]  LOLA rows:  52%|█████▏    | 265/512 [00:12<00:08, 27.49row/s]  LOLA rows:  52%|█████▏    | 268/512 [00:12<00:08, 28.00row/s]  LOLA rows:  53%|█████▎    | 271/512 [00:12<00:10, 23.92row/s]  LOLA rows:  54%|█████▎    | 274/512 [00:12<00:10, 22.53row/s]  LOLA rows:  54%|█████▍    | 277/512 [00:12<00:09, 23.89row/s]  LOLA rows:  55%|█████▌    | 282/512 [00:12<00:10, 22.98row/s]  LOLA rows:  56%|█████▌    | 287/512 [00:13<00:08, 25.95row/s]  LOLA rows:  57%|█████▋    | 290/512 [00:13<00:09, 22.54row/s]  LOLA rows:  58%|█████▊    | 295/512 [00:13<00:08, 27.04row/s]  LOLA rows:  58%|█████▊    | 298/512 [00:13<00:10, 20.36row/s]  LOLA rows:  60%|█████▉    | 306/512 [00:13<00:08, 25.16row/s]  LOLA rows:  61%|██████    | 313/512 [00:13<00:06, 32.35row/s]  LOLA rows:  62%|██████▏   | 317/512 [00:14<00:08, 24.02row/s]  LOLA rows:  63%|██████▎   | 322/512 [00:14<00:07, 24.15row/s]  LOLA rows:  64%|██████▍   | 327/512 [00:14<00:06, 28.28row/s]  LOLA rows:  65%|██████▍   | 331/512 [00:14<00:07, 22.80row/s]  LOLA rows:  66%|██████▌   | 338/512 [00:15<00:07, 23.06row/s]  LOLA rows:  67%|██████▋   | 345/512 [00:15<00:05, 30.17row/s]  LOLA rows:  68%|██████▊   | 349/512 [00:15<00:06, 25.17row/s]  LOLA rows:  69%|██████▉   | 354/512 [00:15<00:07, 22.01row/s]  LOLA rows:  70%|███████   | 359/512 [00:15<00:05, 26.23row/s]  LOLA rows:  71%|███████   | 363/512 [00:16<00:06, 21.57row/s]  LOLA rows:  72%|███████▏  | 370/512 [00:16<00:06, 22.20row/s]  LOLA rows:  74%|███████▍  | 378/512 [00:16<00:05, 23.44row/s]  LOLA rows:  75%|███████▌  | 386/512 [00:17<00:05, 24.49row/s]  LOLA rows:  76%|███████▌  | 389/512 [00:17<00:09, 13.39row/s]  LOLA rows:  79%|███████▊  | 402/512 [00:18<00:04, 22.88row/s]  LOLA rows:  79%|███████▉  | 406/512 [00:18<00:04, 22.77row/s]  LOLA rows:  80%|████████  | 410/512 [00:18<00:04, 24.17row/s]  LOLA rows:  81%|████████  | 414/512 [00:18<00:04, 22.26row/s]  LOLA rows:  82%|████████▏ | 419/512 [00:18<00:03, 24.51row/s]  LOLA rows:  82%|████████▏ | 422/512 [00:18<00:03, 25.26row/s]  LOLA rows:  83%|████████▎ | 426/512 [00:18<00:03, 26.71row/s]  LOLA rows:  84%|████████▍ | 430/512 [00:19<00:03, 24.38row/s]  LOLA rows:  85%|████████▍ | 433/512 [00:19<00:03, 23.28row/s]  LOLA rows:  85%|████████▌ | 436/512 [00:19<00:03, 22.95row/s]  LOLA rows:  86%|████████▌ | 440/512 [00:19<00:02, 26.42row/s]  LOLA rows:  87%|████████▋ | 443/512 [00:19<00:02, 23.32row/s]  LOLA rows:  87%|████████▋ | 447/512 [00:19<00:02, 26.94row/s]  LOLA rows:  88%|████████▊ | 450/512 [00:19<00:02, 27.42row/s]  LOLA rows:  88%|████████▊ | 453/512 [00:20<00:02, 22.18row/s]  LOLA rows:  89%|████████▉ | 458/512 [00:20<00:01, 28.24row/s]  LOLA rows:  90%|█████████ | 462/512 [00:20<00:02, 22.52row/s]  LOLA rows:  91%|█████████ | 467/512 [00:20<00:01, 25.12row/s]  LOLA rows:  92%|█████████▏| 470/512 [00:20<00:01, 22.56row/s]  LOLA rows:  93%|█████████▎| 475/512 [00:20<00:01, 26.79row/s]  LOLA rows:  93%|█████████▎| 478/512 [00:21<00:01, 20.90row/s]  LOLA rows:  95%|█████████▍| 484/512 [00:21<00:01, 25.32row/s]  LOLA rows:  95%|█████████▌| 487/512 [00:21<00:01, 23.16row/s]  LOLA rows:  96%|█████████▌| 492/512 [00:21<00:00, 25.51row/s]  LOLA rows:  97%|█████████▋| 495/512 [00:21<00:00, 24.83row/s]  LOLA rows:  98%|█████████▊| 500/512 [00:21<00:00, 25.72row/s]  LOLA rows:  98%|█████████▊| 503/512 [00:22<00:00, 24.20row/s]  LOLA rows:  99%|█████████▉| 506/512 [00:22<00:00, 23.47row/s]  LOLA rows: 100%|█████████▉| 510/512 [00:22<00:00, 26.95row/s]  LOLA rows: 100%|██████████| 512/512 [00:22<00:00, 22.76row/s]
+  [dem] Saved C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\intermediate\alphonsus\dem\lola_ldem256_pilot.npy  shape=(512, 512)  finite=262144/262144  min=-1.9519 km  max=-0.2839 km
+  done in 22.5s
+
+Step 3/8: extract_optical  —  Extract WAC optical AOI
+  [optical] WAC file cached at C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\raw\optical\WAC_GLOBAL_E300S3150_100M.TIF
+  [optical] Extracting window  lat [-14.5,-12.5]  lon [356.0,358.0]
+  [optical] Saved C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\intermediate\alphonsus\optical\wac_pilot.npy  shape=(606, 606)  dtype=uint8  min=2  max=179
+  done in 0.2s
+
+Step 4/8: create_grid  —  Define common grid
+  [grid] alphonsus: 256x256 @ 128 PPD (236.90 m/px)  saved to C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\intermediate\alphonsus\registration
+  done in 0.0s
+
+Step 5/8: harmonize  —  Harmonize all modalities
+  [harmonize] optical  shape=(256, 256)  coverage_mean=1.0000
+  [harmonize] DEM  shape=(256, 256)  valid=65536/65536  min=-1.9296 km  max=-0.2880 km
+  [harmonize] thermal  shape=(256, 256)  valid=65536/65536  min=95.78  max=155.46
+  done in 0.3s
+
+Step 6/8: derive_terrain  —  Derive slope + hillshade
+  [terrain] slope    mean=2.404 deg  max=28.574 deg
+  [terrain] hillshade mean=0.7074
+  done in 0.0s
+
+Step 7/8: create_tiles  —  Create 16 synchronized tiles
+  [tiles] alphonsus: 16 tiles (4x4 @ 64x64 px)  written to C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\data\benchmark\alphonsus\tiles
+  done in 0.5s
+
+Step 8/8: validate  —  Validate + QC figures
+  [validate] Structural check ...
+  [validate] PASS — all 16 tiles structurally valid.
+  [validate] Cross-modal mutual information ...
+             MI(optical_vs_dem) = 0.060510 nats
+             MI(optical_vs_thermal) = 0.050920 nats
+             MI(dem_vs_thermal) = 0.032401 nats
+             MI(slope_vs_thermal) = 0.038023 nats
+             MI(hillshade_vs_thermal) = 0.046120 nats
+  [validate] Cross-modal edge alignment ...
+             Dice(optical_vs_dem_dice) = 0.3546
+             Dice(optical_vs_thermal_dice) = 0.3430
+             Dice(dem_vs_thermal_dice) = 0.2362
+  [validate] QC figures saved to C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\outputs\alphonsus\validation
+  [validate] Report saved to C:\Supreeth\Projects\Lunar\Multimodal_benchmark_Dataset_FYP_P1\outputs\alphonsus\validation\validation_report.json
+  done in 4.1s
+
+========================================================================
+  Region 'alphonsus' completed in 40.2s
+========================================================================
+
+Updating global manifest for: ['alphonsus']
+  [manifest] Updated entry for 'alphonsus'.
+  [manifest] global_manifest.json updated — 22 region(s).
+
+========================================================================
+  SUMMARY
+  Success : ['alphonsus']
+========================================================================

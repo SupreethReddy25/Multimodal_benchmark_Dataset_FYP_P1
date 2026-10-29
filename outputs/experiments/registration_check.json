@@ -1,0 +1,366 @@
+[
+  {
+    "region": "lacus_mortis",
+    "ncc_zero_shift": 0.31878546361508786,
+    "ncc_best": 0.3826914995248238,
+    "best_shift_px": [
+      -3,
+      1
+    ],
+    "best_shift_m": 749.1472939667591,
+    "zero_over_best": 0.8330090007510329,
+    "zero_rank_of_121": 81,
+    "optical_valid_fraction": 0.8270111083984375
+  },
+  {
+    "region": "posidonius",
+    "ncc_zero_shift": 0.5151407650734156,
+    "ncc_best": 0.5661682499463087,
+    "best_shift_px": [
+      0,
+      3
+    ],
+    "best_shift_m": 710.7035255660028,
+    "zero_over_best": 0.9098722245944872,
+    "zero_rank_of_121": 42,
+    "optical_valid_fraction": 0.9274749755859375
+  },
+  {
+    "region": "montes_apenninus",
+    "ncc_zero_shift": 0.42201291401297986,
+    "ncc_best": 0.4835535540324507,
+    "best_shift_px": [
+      1,
+      -3
+    ],
+    "best_shift_m": 749.1472939667591,
+    "zero_over_best": 0.8727325246474336,
+    "zero_rank_of_121": 71,
+    "optical_valid_fraction": 0.89801025390625
+  },
+  {
+    "region": "aristoteles",
+    "ncc_zero_shift": 0.513660386825234,
+    "ncc_best": 0.5684819069865902,
+    "best_shift_px": [
+      1,
+      -2
+    ],
+    "best_shift_m": 529.7271316714473,
+    "zero_over_best": 0.9035650572382256,
+    "zero_rank_of_121": 40,
+    "optical_valid_fraction": 0.83074951171875
+  },
+  {
+    "region": "endymion",
+    "ncc_zero_shift": 0.596991634489156,
+    "ncc_best": 0.6329539705640119,
+    "best_shift_px": [
+      0,
+      2
+    ],
+    "best_shift_m": 473.8023503773352,
+    "zero_over_best": 0.9431833312573888,
+    "zero_rank_of_121": 22,
+    "optical_valid_fraction": 0.7225494384765625
+  },
+  {
+    "region": "mare_crisium",
+    "ncc_zero_shift": 0.5195303548607356,
+    "ncc_best": 0.5595363396851908,
+    "best_shift_px": [
+      0,
+      1
+    ],
+    "best_shift_m": 236.9011751886676,
+    "zero_over_best": 0.928501543175974,
+    "zero_rank_of_121": 5,
+    "optical_valid_fraction": 0.9419097900390625
+  },
+  {
+    "region": "taurus_littrow",
+    "ncc_zero_shift": 0.3979274750698962,
+    "ncc_best": 0.4504365552386163,
+    "best_shift_px": [
+      1,
+      -2
+    ],
+    "best_shift_m": 529.7271316714473,
+    "zero_over_best": 0.8834262460316886,
+    "zero_rank_of_121": 24,
+    "optical_valid_fraction": 0.91949462890625
+  },
+  {
+    "region": "tranquillitatis",
+    "ncc_zero_shift": 0.5817127299860227,
+    "ncc_best": 0.6044784307892528,
+    "best_shift_px": [
+      0,
+      2
+    ],
+    "best_shift_m": 473.8023503773352,
+    "zero_over_best": 0.9623382743806005,
+    "zero_rank_of_121": 4,
+    "optical_valid_fraction": 0.9504852294921875
+  },
+  {
+    "region": "proclus",
+    "ncc_zero_shift": 0.175981678938352,
+    "ncc_best": 0.2777973613261034,
+    "best_shift_px": [
+      -1,
+      5
+    ],
+    "best_shift_m": 1207.9637150800788,
+    "zero_over_best": 0.6334893826862846,
+    "zero_rank_of_121": 120,
+    "optical_valid_fraction": 0.929656982421875
+  },
+  {
+    "region": "hyginus",
+    "ncc_zero_shift": 0.6280032428228602,
+    "ncc_best": 0.7038684170752181,
+    "best_shift_px": [
+      0,
+      2
+    ],
+    "best_shift_m": 473.8023503773352,
+    "zero_over_best": 0.8922168229005073,
+    "zero_rank_of_121": 15,
+    "optical_valid_fraction": 0.93450927734375
+  },
+  {
+    "region": "atlas",
+    "ncc_zero_shift": 0.19707821636075526,
+    "ncc_best": 0.2972775230827485,
+    "best_shift_px": [
+      -1,
+      3
+    ],
+    "best_shift_m": 749.1472939667591,
+    "zero_over_best": 0.6629435495730286,
+    "zero_rank_of_121": 79,
+    "optical_valid_fraction": 0.9116668701171875
+  },
+  {
+    "region": "humboldtianum",
+    "ncc_zero_shift": 0.5654990600832998,
+    "ncc_best": 0.6037046037581932,
+    "best_shift_px": [
+      0,
+      2
+    ],
+    "best_shift_m": 473.8023503773352,
+    "zero_over_best": 0.936714837957081,
+    "zero_rank_of_121": 7,
+    "optical_valid_fraction": 0.8646697998046875
+  },
+  {
+    "region": "descartes",
+    "ncc_zero_shift": 0.38039456314576053,
+    "ncc_best": 0.4932404552223382,
+    "best_shift_px": [
+      0,
+      -2
+    ],
+    "best_shift_m": 473.8023503773352,
+    "zero_over_best": 0.7712152543819422,
+    "zero_rank_of_121": 21,
+    "optical_valid_fraction": 0.95367431640625
+  },
+  {
+    "region": "tycho",
+    "ncc_zero_shift": 0.41740767897514824,
+    "ncc_best": 0.48130919798383287,
+    "best_shift_px": [
+      1,
+      2
+    ],
+    "best_shift_m": 529.7271316714473,
+    "zero_over_best": 0.8672339542307457,
+    "zero_rank_of_121": 34,
+    "optical_valid_fraction": 0.908172607421875
+  },
+  {
+    "region": "tsiolkovsky",
+    "ncc_zero_shift": 0.606936433567179,
+    "ncc_best": 0.6652176811020112,
+    "best_shift_px": [
+      0,
+      -4
+    ],
+    "best_shift_m": 947.6047007546704,
+    "zero_over_best": 0.9123877052722313,
+    "zero_rank_of_121": 70,
+    "optical_valid_fraction": 0.94586181640625
+  },
+  {
+    "region": "copernicus",
+    "ncc_zero_shift": 0.5249097676714609,
+    "ncc_best": 0.5584336791985415,
+    "best_shift_px": [
+      1,
+      -1
+    ],
+    "best_shift_m": 335.0288548939383,
+    "zero_over_best": 0.939967962578486,
+    "zero_rank_of_121": 11,
+    "optical_valid_fraction": 0.950225830078125
+  },
+  {
+    "region": "aristarchus",
+    "ncc_zero_shift": 0.3905584063026221,
+    "ncc_best": 0.4142389813913778,
+    "best_shift_px": [
+      1,
+      3
+    ],
+    "best_shift_m": 749.1472939667591,
+    "zero_over_best": 0.9428335425864182,
+    "zero_rank_of_121": 42,
+    "optical_valid_fraction": 0.9422760009765625
+  },
+  {
+    "region": "orientale",
+    "ncc_zero_shift": 0.49679976105016543,
+    "ncc_best": 0.527138826720794,
+    "best_shift_px": [
+      0,
+      2
+    ],
+    "best_shift_m": 473.8023503773352,
+    "zero_over_best": 0.9424457768376487,
+    "zero_rank_of_121": 5,
+    "optical_valid_fraction": 0.9467620849609375
+  },
+  {
+    "region": "ingenii",
+    "ncc_zero_shift": 0.6130841455712314,
+    "ncc_best": 0.6493003135313121,
+    "best_shift_px": [
+      0,
+      -3
+    ],
+    "best_shift_m": 710.7035255660028,
+    "zero_over_best": 0.9442227776495071,
+    "zero_rank_of_121": 32,
+    "optical_valid_fraction": 0.923797607421875
+  },
+  {
+    "region": "fra_mauro",
+    "ncc_zero_shift": 0.6314510492276473,
+    "ncc_best": 0.657224982619246,
+    "best_shift_px": [
+      1,
+      2
+    ],
+    "best_shift_m": 529.7271316714473,
+    "zero_over_best": 0.960783698013302,
+    "zero_rank_of_121": 6,
+    "optical_valid_fraction": 0.952392578125
+  },
+  {
+    "region": "sinus_iridum",
+    "ncc_zero_shift": 0.616057641392169,
+    "ncc_best": 0.6850325118688969,
+    "best_shift_px": [
+      0,
+      2
+    ],
+    "best_shift_m": 473.8023503773352,
+    "zero_over_best": 0.8993115373625822,
+    "zero_rank_of_121": 5,
+    "optical_valid_fraction": 0.9272918701171875
+  },
+  {
+    "region": "moscoviense",
+    "ncc_zero_shift": 0.6368549424245235,
+    "ncc_best": 0.6648260941832188,
+    "best_shift_px": [
+      0,
+      -1
+    ],
+    "best_shift_m": 236.9011751886676,
+    "zero_over_best": 0.9579271150705062,
+    "zero_rank_of_121": 7,
+    "optical_valid_fraction": 0.9503631591796875
+  },
+  {
+    "region": "korolev",
+    "ncc_zero_shift": 0.3242301600404442,
+    "ncc_best": 0.4094180524459902,
+    "best_shift_px": [
+      1,
+      -3
+    ],
+    "best_shift_m": 749.1472939667591,
+    "zero_over_best": 0.7919293204180734,
+    "zero_rank_of_121": 61,
+    "optical_valid_fraction": 0.9276885986328125
+  },
+  {
+    "region": "kepler",
+    "ncc_zero_shift": 0.4924271714608742,
+    "ncc_best": 0.5482016219819141,
+    "best_shift_px": [
+      0,
+      4
+    ],
+    "best_shift_m": 947.6047007546704,
+    "zero_over_best": 0.8982592384177952,
+    "zero_rank_of_121": 43,
+    "optical_valid_fraction": 0.9390869140625
+  },
+  {
+    "region": "grimaldi",
+    "ncc_zero_shift": 0.4663544392444629,
+    "ncc_best": 0.46707475473286636,
+    "best_shift_px": [
+      1,
+      0
+    ],
+    "best_shift_m": 236.9011751886676,
+    "zero_over_best": 0.9984578154115492,
+    "zero_rank_of_121": 2,
+    "optical_valid_fraction": 0.95306396484375
+  },
+  {
+    "region": "alphonsus",
+    "ncc_zero_shift": 0.5699260495990214,
+    "ncc_best": 0.5699260495990214,
+    "best_shift_px": [
+      0,
+      0
+    ],
+    "best_shift_m": 0.0,
+    "zero_over_best": 1.0,
+    "zero_rank_of_121": 1,
+    "optical_valid_fraction": 0.95367431640625
+  },
+  {
+    "region": "plato",
+    "ncc_zero_shift": 0.5906404946726992,
+    "ncc_best": 0.7217278699550898,
+    "best_shift_px": [
+      0,
+      2
+    ],
+    "best_shift_m": 473.8023503773352,
+    "zero_over_best": 0.8183700799990616,
+    "zero_rank_of_121": 12,
+    "optical_valid_fraction": 0.9231719970703125
+  },
+  {
+    "region": "apollo_basin",
+    "ncc_zero_shift": 0.6415362173664039,
+    "ncc_best": 0.7521541669640581,
+    "best_shift_px": [
+      1,
+      -2
+    ],
+    "best_shift_m": 529.7271316714473,
+    "zero_over_best": 0.8529318131093461,
+    "zero_rank_of_121": 16,
+    "optical_valid_fraction": 0.92889404296875
+  }
+]

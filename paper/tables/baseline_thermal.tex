@@ -1,0 +1,19 @@
+\begin{tabular}{llllll}
+\toprule
+Inputs & Model & RMSE & MAE & R2 & Anomaly R2 \\
+\midrule
+- & mean & 7.595 & 5.982 & -1.481 & -0.000 \\
+latitude only & latitude & 8.171 & 6.704 & -1.970 & 0.000 \\
+optical & ridge & 7.108 & 5.500 & -1.250 & -0.186 \\
+optical & hist\_gb & 6.672 $\pm$ 0.006 & 4.998 $\pm$ 0.006 & -1.759 $\pm$ 0.026 & -0.895 $\pm$ 0.029 \\
+optical & cnn & 5.784 $\pm$ 0.107 & 4.265 $\pm$ 0.070 & -1.389 $\pm$ 0.402 & -0.562 $\pm$ 0.229 \\
+terrain & ridge & 7.417 & 5.995 & -2.280 & -0.888 \\
+terrain & hist\_gb & 7.559 $\pm$ 0.010 & 6.044 $\pm$ 0.009 & -2.649 $\pm$ 0.015 & -1.270 $\pm$ 0.015 \\
+terrain & cnn & 7.690 $\pm$ 0.187 & 6.186 $\pm$ 0.148 & -3.508 $\pm$ 0.399 & -1.526 $\pm$ 0.364 \\
+optical+terrain & ridge & 7.193 & 5.740 & -2.027 & -0.802 \\
+optical+terrain & hist\_gb & 6.835 $\pm$ 0.029 & 5.214 $\pm$ 0.021 & -3.373 $\pm$ 0.142 & -2.076 $\pm$ 0.142 \\
+optical+terrain & cnn & 6.595 $\pm$ 0.067 & 4.825 $\pm$ 0.079 & -4.232 $\pm$ 0.300 & -2.848 $\pm$ 0.163 \\
+optical+terrain [LORO] & hist\_gb & 6.266 & 4.861 & -3.157 & -1.536 \\
+optical+terrain [LORO] & mean & 6.487 & 5.071 & -1.471 & -0.000 \\
+\bottomrule
+\end{tabular}

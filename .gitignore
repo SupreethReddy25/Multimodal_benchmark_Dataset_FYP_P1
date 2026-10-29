@@ -19,14 +19,51 @@ htmlcov/
 *.swp
 *.swo
 
-# Large raw datasets (>100MB, excluded from GitHub)
+# -----------------------------------------------------------------------
+# Large raw datasets (>100 MB) — never commit to GitHub
+# -----------------------------------------------------------------------
 data/raw/**
 !data/raw/**/.gitkeep
 !data/raw/**/*.xml
 !data/raw/**/*.LBL
+!data/raw/**/*.lbl
 
-# Large binary archives & model weights if any
+# LOLA / Diviner / WAC source binary blobs
+*.IMG
+*.img
+*.TIF
+*.tif
+*.tiff
+
+# -----------------------------------------------------------------------
+# Intermediate processed arrays — large .npy files excluded
+# Keep the directory structure via .gitkeep files
+# -----------------------------------------------------------------------
+data/intermediate/**/*.npy
+!data/intermediate/**/.gitkeep
+
+# -----------------------------------------------------------------------
+# Benchmark tile .npy arrays — exclude from Git (publish via Zenodo/HF)
+# Keep all JSON metadata and PNG QC figures
+# -----------------------------------------------------------------------
+data/benchmark/**/tiles/**/*.npy
+!data/benchmark/**/tiles/**/.gitkeep
+
+# Keep these tracked in Git:
+#   data/benchmark/global_manifest.json
+#   data/benchmark/**/metadata/tile_index.json
+#   outputs/**/validation/*.json
+#   outputs/**/validation/*.png
+
+# Large binary archives & model weights
 *.tar
 *.zip
 *.gz
 *.7z
+*.pt
+*.pth
+*.pkl
+
+# External catalogues (re-download; see PROJECT_GUIDE.md)
+data/external/**
+!data/external/**/.gitkeep

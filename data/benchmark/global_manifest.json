@@ -1,0 +1,1639 @@
+{
+  "dataset": "Multimodal Lunar Benchmark Dataset",
+  "version": "1.0.0",
+  "description": "A multimodal, spatially-synchronized benchmark dataset of the lunar surface comprising optical, elevation, thermal, slope, and hillshade layers partitioned into 64x64 px tiles.",
+  "created_utc": "2026-10-27T08:31:42.415658+00:00",
+  "updated_utc": "2026-10-29T04:34:29.044583+00:00",
+  "regions": {
+    "posidonius": {
+      "id": "posidonius",
+      "name": "Posidonius / Mare Serenitatis Rim",
+      "description": "95 km floor-fractured crater on the north-eastern rim of Mare Serenitatis with concentric ridge systems, volcanic infill, and rilles.\n",
+      "extent": {
+        "lat_min": 31.0,
+        "lat_max": 33.0,
+        "lon_min": 28.0,
+        "lon_max": 30.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9925607182085514,
+          "min": 0.945129930973053,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.17057550652179732,
+          "optical_vs_thermal": 0.1300420685115817,
+          "dem_vs_thermal": 0.06851378343109056,
+          "slope_vs_thermal": 0.14484718508555855,
+          "hillshade_vs_thermal": 0.12304721016474675
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.29325602685382973,
+          "optical_vs_thermal_dice": 0.4057064388159902,
+          "dem_vs_thermal_dice": 0.24809276777540434
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\posidonius"
+    },
+    "montes_apenninus": {
+      "id": "montes_apenninus",
+      "name": "Montes Apenninus / Hadley Rille",
+      "description": "Tallest lunar mountain range forming the south-eastern rim of Mare Imbrium, including Hadley Rille (Apollo 15 landing area).\n",
+      "extent": {
+        "lat_min": 25.0,
+        "lat_max": 27.0,
+        "lon_min": 3.0,
+        "lon_max": 5.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9853551611304283,
+          "min": 0.8821486234664917,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 0.999969482421875,
+          "min": 0.99951171875,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.21255260760816325,
+          "optical_vs_thermal": 0.08260990977456688,
+          "dem_vs_thermal": 0.11663625161583605,
+          "slope_vs_thermal": 0.207906809880037,
+          "hillshade_vs_thermal": 0.16563262746069418
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.15593530668294173,
+          "optical_vs_thermal_dice": 0.22886786695148,
+          "dem_vs_thermal_dice": 0.0889533109551419
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\montes_apenninus"
+    },
+    "aristoteles": {
+      "id": "aristoteles",
+      "name": "Aristoteles + Mitchell Craters",
+      "description": "Large paired Eratosthenian-aged impact craters at high northern latitude with rugged ejecta blankets and terraced walls.\n",
+      "extent": {
+        "lat_min": 49.0,
+        "lat_max": 51.0,
+        "lon_min": 16.0,
+        "lon_max": 18.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9613621979951859,
+          "min": 0.7763193845748901,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.24713101856907296,
+          "optical_vs_thermal": 0.14319446882087752,
+          "dem_vs_thermal": 0.20463526224841316,
+          "slope_vs_thermal": 0.22663785154233296,
+          "hillshade_vs_thermal": 0.17485134114920142
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.12969179127250535,
+          "optical_vs_thermal_dice": 0.2187976808056149,
+          "dem_vs_thermal_dice": 0.19331705828501677
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\aristoteles"
+    },
+    "endymion": {
+      "id": "endymion",
+      "name": "Endymion Crater",
+      "description": "Large flooded ancient crater with extremely dark smooth basalt floor at high northern latitude.  Ultra-low-albedo thermal reference.\n",
+      "extent": {
+        "lat_min": 52.0,
+        "lat_max": 54.0,
+        "lon_min": 54.0,
+        "lon_max": 56.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.8863291703164577,
+          "min": 0.4426453709602356,
+          "max": 0.9996084570884705
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.388305435169894,
+          "optical_vs_thermal": 0.26293144985240935,
+          "dem_vs_thermal": 0.3472255560302003,
+          "slope_vs_thermal": 0.40907126344756495,
+          "hillshade_vs_thermal": 0.40784467148228687
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.06209948123283491,
+          "optical_vs_thermal_dice": 0.31354897772352763,
+          "dem_vs_thermal_dice": 0.06118400976502899
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\endymion"
+    },
+    "mare_crisium": {
+      "id": "mare_crisium",
+      "name": "Mare Crisium Basin",
+      "description": "Isolated circular mare basin with ultra-flat floor.  Lowest-slope reference region in the benchmark.\n",
+      "extent": {
+        "lat_min": 15.0,
+        "lat_max": 17.0,
+        "lon_min": 58.0,
+        "lon_max": 60.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.999717228114605,
+          "min": 0.9973801374435425,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.054980797437926616,
+          "optical_vs_thermal": 0.11954131747967105,
+          "dem_vs_thermal": 0.01625295893740238,
+          "slope_vs_thermal": 0.0518987385820612,
+          "hillshade_vs_thermal": 0.043413085659942216
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.4144034177601465,
+          "optical_vs_thermal_dice": 0.4237107110161733,
+          "dem_vs_thermal_dice": 0.28944156240463836
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\mare_crisium"
+    },
+    "lacus_mortis": {
+      "id": "lacus_mortis",
+      "name": "Lacus Mortis - Burg Crater Pilot",
+      "description": "Mid-latitude mare region dominated by the 40 km Burg complex-impact crater with tectonic rilles, smooth basalt plains, and steep crater walls.  Original pilot region.\n",
+      "extent": {
+        "lat_min": 44.0,
+        "lat_max": 46.0,
+        "lon_min": 27.0,
+        "lon_max": 29.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9381609410047531,
+          "min": 0.36882245540618896,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.16963171837147975,
+          "optical_vs_thermal": 0.11286317951933592,
+          "dem_vs_thermal": 0.24691079634509638,
+          "slope_vs_thermal": 0.2581289873730195,
+          "hillshade_vs_thermal": 0.26135958044298024
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.10421116875190724,
+          "optical_vs_thermal_dice": 0.244278303326213,
+          "dem_vs_thermal_dice": 0.40921574610924627
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\lacus_mortis"
+    },
+    "taurus_littrow": {
+      "id": "taurus_littrow",
+      "name": "Taurus-Littrow Valley (Apollo 17)",
+      "description": "Apollo 17 landing area: steep highland massifs bounding a narrow dark-mantled valley on the south-eastern rim of Mare Serenitatis. Sample-return ground truth exists for this site.\n",
+      "extent": {
+        "lat_min": 19.0,
+        "lat_max": 21.0,
+        "lon_min": 30.0,
+        "lon_max": 32.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9881260767579079,
+          "min": 0.8727170825004578,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.17274044303175853,
+          "optical_vs_thermal": 0.08504239116471168,
+          "dem_vs_thermal": 0.039311435484530664,
+          "slope_vs_thermal": 0.1072634358243379,
+          "hillshade_vs_thermal": 0.1356684975734873
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.10573695453158377,
+          "optical_vs_thermal_dice": 0.2680805614891669,
+          "dem_vs_thermal_dice": 0.16264876411351847
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\taurus_littrow"
+    },
+    "tranquillitatis": {
+      "id": "tranquillitatis",
+      "name": "Mare Tranquillitatis (Apollo 11)",
+      "description": "Apollo 11 landing area on a low-relief equatorial mare plain with small craters; warm equatorial thermal regime and sample ground truth.\n",
+      "extent": {
+        "lat_min": 0.0,
+        "lat_max": 2.0,
+        "lon_min": 23.0,
+        "lon_max": 25.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9997444227337837,
+          "min": 0.9962153434753418,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.11221082136711903,
+          "optical_vs_thermal": 0.04255823235592571,
+          "dem_vs_thermal": 0.02355604579777955,
+          "slope_vs_thermal": 0.065970160406849,
+          "hillshade_vs_thermal": 0.04926520508139358
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.427372596887397,
+          "optical_vs_thermal_dice": 0.41684467500762895,
+          "dem_vs_thermal_dice": 0.3329264571254196
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\tranquillitatis"
+    },
+    "proclus": {
+      "id": "proclus",
+      "name": "Proclus Crater and Rays",
+      "description": "Young, optically bright impact crater with an asymmetric ray system on the western rim of Mare Crisium; extreme albedo contrast.\n",
+      "extent": {
+        "lat_min": 15.0,
+        "lat_max": 17.0,
+        "lon_min": 46.0,
+        "lon_max": 48.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9964437335729599,
+          "min": 0.9729977250099182,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.11683561776794094,
+          "optical_vs_thermal": 0.10842416532151475,
+          "dem_vs_thermal": 0.21819190073831823,
+          "slope_vs_thermal": 0.117557372583994,
+          "hillshade_vs_thermal": 0.11193759153102661
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.12969179127250535,
+          "optical_vs_thermal_dice": 0.33018004272200185,
+          "dem_vs_thermal_dice": 0.3034787915776625
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\proclus"
+    },
+    "hyginus": {
+      "id": "hyginus",
+      "name": "Rima Hyginus",
+      "description": "Hyginus crater and the linear Rima Hyginus rille: a chain of endogenic pit craters, distinct from impact morphology.\n",
+      "extent": {
+        "lat_min": 7.0,
+        "lat_max": 9.0,
+        "lon_min": 5.0,
+        "lon_max": 7.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9983037076890469,
+          "min": 0.9892550706863403,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 0.9998931884765625,
+          "min": 0.99853515625,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.10893057265524139,
+          "optical_vs_thermal": 0.1535763139749767,
+          "dem_vs_thermal": 0.10992013999251903,
+          "slope_vs_thermal": 0.23918246197751156,
+          "hillshade_vs_thermal": 0.1952192272680222
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.5267012511443393,
+          "optical_vs_thermal_dice": 0.518919743667989,
+          "dem_vs_thermal_dice": 0.6203844980164784
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\hyginus"
+    },
+    "atlas": {
+      "id": "atlas",
+      "name": "Atlas Crater",
+      "description": "Atlas crater in the northern nearside highlands near the Mare Frigoris margin; terraced walls and a mid-latitude highland setting.\n",
+      "extent": {
+        "lat_min": 46.0,
+        "lat_max": 48.0,
+        "lon_min": 43.0,
+        "lon_max": 45.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9974421262741089,
+          "min": 0.9778584241867065,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.04987366560940199,
+          "optical_vs_thermal": 0.1068676664686945,
+          "dem_vs_thermal": 0.05367904601622458,
+          "slope_vs_thermal": 0.14883029203543607,
+          "hillshade_vs_thermal": 0.14082697566345104
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.11046689044858102,
+          "optical_vs_thermal_dice": 0.32880683552029294,
+          "dem_vs_thermal_dice": 0.23817516020750687
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\atlas"
+    },
+    "humboldtianum": {
+      "id": "humboldtianum",
+      "name": "Mare Humboldtianum",
+      "description": "Mare within the Humboldtianum basin at ~57N: low solar incidence, long shadows and a stress test for optical and thermal modalities.\n",
+      "extent": {
+        "lat_min": 56.0,
+        "lat_max": 58.0,
+        "lon_min": 80.0,
+        "lon_max": 82.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9980344660580158,
+          "min": 0.9939451217651367,
+          "max": 0.9998259544372559
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.0811418460208045,
+          "optical_vs_thermal": 0.06636455086276959,
+          "dem_vs_thermal": 0.05149003797475816,
+          "slope_vs_thermal": 0.07726433909828587,
+          "hillshade_vs_thermal": 0.06405855314593144
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.36374732987488556,
+          "optical_vs_thermal_dice": 0.33079035703387244,
+          "dem_vs_thermal_dice": 0.24473603906011596
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\humboldtianum"
+    },
+    "descartes": {
+      "id": "descartes",
+      "name": "Descartes Highlands (Apollo 16)",
+      "description": "Apollo 16 landing area in the southern nearside highlands: bright, heavily cratered, non-mare terrain with sample ground truth.\n",
+      "extent": {
+        "lat_min": -10.0,
+        "lat_max": -8.0,
+        "lon_min": 15.0,
+        "lon_max": 17.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.035129335125007474,
+          "optical_vs_thermal": 0.04255235091903317,
+          "dem_vs_thermal": 0.02032583199434365,
+          "slope_vs_thermal": 0.026482625630223328,
+          "hillshade_vs_thermal": 0.03835287751692218
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.21940799511748552,
+          "optical_vs_thermal_dice": 0.26670735428745806,
+          "dem_vs_thermal_dice": 0.19041806530363137
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\descartes"
+    },
+    "tycho": {
+      "id": "tycho",
+      "name": "Tycho Crater",
+      "description": "Young (~110 Ma) complex crater in the southern highlands with a central peak, terraced walls and a bright ray system.\n",
+      "extent": {
+        "lat_min": -44.5,
+        "lat_max": -42.5,
+        "lon_min": 347.5,
+        "lon_max": 349.5
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.989366814494133,
+          "min": 0.8415710926055908,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.16660943265306838,
+          "optical_vs_thermal": 0.0676007223144354,
+          "dem_vs_thermal": 0.11974719520914671,
+          "slope_vs_thermal": 0.12338568377308502,
+          "hillshade_vs_thermal": 0.11043054641500297
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.13854134879462923,
+          "optical_vs_thermal_dice": 0.1779066219102838,
+          "dem_vs_thermal_dice": 0.1547146780592005
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\tycho"
+    },
+    "tsiolkovsky": {
+      "id": "tsiolkovsky",
+      "name": "Tsiolkovsky Crater (farside)",
+      "description": "Farside complex crater with a dark mare-filled floor and prominent central peak, giving a farside highland/mare contrast.\n",
+      "extent": {
+        "lat_min": -21.5,
+        "lat_max": -19.5,
+        "lon_min": 128.0,
+        "lon_max": 130.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9998613372445107,
+          "min": 0.9979119300842285,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.41736925963862465,
+          "optical_vs_thermal": 0.23058263274151955,
+          "dem_vs_thermal": 0.21243147458870007,
+          "slope_vs_thermal": 0.26937307171935726,
+          "hillshade_vs_thermal": 0.22547986365053257
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.339792493133964,
+          "optical_vs_thermal_dice": 0.3170582850167836,
+          "dem_vs_thermal_dice": 0.3404028074458346
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\tsiolkovsky"
+    },
+    "fra_mauro": {
+      "id": "fra_mauro",
+      "name": "Fra Mauro Highlands (Apollo 14)",
+      "description": "Fra Mauro formation, a rolling Imbrium-basin ejecta terrain and the Apollo 14 landing area with sample ground truth.\n",
+      "extent": {
+        "lat_min": -7.0,
+        "lat_max": -5.0,
+        "lon_min": 342.0,
+        "lon_max": 344.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.999970093369484,
+          "min": 0.9995650053024292,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.07221675037709535,
+          "optical_vs_thermal": 0.16854813821028544,
+          "dem_vs_thermal": 0.058009991266329344,
+          "slope_vs_thermal": 0.11989208287504446,
+          "hillshade_vs_thermal": 0.08472765098817102
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.45620994812328347,
+          "optical_vs_thermal_dice": 0.41577662496185536,
+          "dem_vs_thermal_dice": 0.3256026853829722
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\fra_mauro"
+    },
+    "ingenii": {
+      "id": "ingenii",
+      "name": "Mare Ingenii (farside swirls)",
+      "description": "Farside mare within the Ingenii basin, hosting the Reiner-Gamma-type swirl albedo markings; farside regolith texture unlike nearside maria.\n",
+      "extent": {
+        "lat_min": -34.5,
+        "lat_max": -32.5,
+        "lon_min": 162.5,
+        "lon_max": 164.5
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9959246851503849,
+          "min": 0.9708490371704102,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.2802267148037767,
+          "optical_vs_thermal": 0.0843361032872741,
+          "dem_vs_thermal": 0.09906991271970306,
+          "slope_vs_thermal": 0.0958371152870808,
+          "hillshade_vs_thermal": 0.11662690152578525
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.3774794018919744,
+          "optical_vs_thermal_dice": 0.2216966737870003,
+          "dem_vs_thermal_dice": 0.06072627403112603
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\ingenii"
+    },
+    "aristarchus": {
+      "id": "aristarchus",
+      "name": "Aristarchus Plateau",
+      "description": "Brightest large nearside crater beside the Aristarchus Plateau and Schroter's Valley sinuous rille; very high albedo with pyroclastic deposits nearby.\n",
+      "extent": {
+        "lat_min": 22.5,
+        "lat_max": 24.5,
+        "lon_min": 311.5,
+        "lon_max": 313.5
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9990783110260963,
+          "min": 0.9863834381103516,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.3154611229450288,
+          "optical_vs_thermal": 0.1324580959757454,
+          "dem_vs_thermal": 0.3790746643761947,
+          "slope_vs_thermal": 0.13887064279312433,
+          "hillshade_vs_thermal": 0.12756642346145441
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.2305462313091242,
+          "optical_vs_thermal_dice": 0.2923405553860238,
+          "dem_vs_thermal_dice": 0.21391516631065
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\aristarchus"
+    },
+    "sinus_iridum": {
+      "id": "sinus_iridum",
+      "name": "Sinus Iridum",
+      "description": "Bay on the north-western rim of Mare Imbrium bounded by the Montes Jura arc: smooth mare plain against steep highland rim and wrinkle ridges.\n",
+      "extent": {
+        "lat_min": 44.0,
+        "lat_max": 46.0,
+        "lon_min": 327.5,
+        "lon_max": 329.5
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9983605220913887,
+          "min": 0.9946815371513367,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.09737075360862459,
+          "optical_vs_thermal": 0.08501665422140578,
+          "dem_vs_thermal": 0.036292154314592276,
+          "slope_vs_thermal": 0.07775968123747545,
+          "hillshade_vs_thermal": 0.06441447093383496
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.5288373512358865,
+          "optical_vs_thermal_dice": 0.41272505340250226,
+          "dem_vs_thermal_dice": 0.3486420506560879
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\sinus_iridum"
+    },
+    "copernicus": {
+      "id": "copernicus",
+      "name": "Copernicus Crater",
+      "description": "~800 Ma, 93 km complex crater on Mare Imbrium's southern margin with terraced walls, central peaks, and a prominent ray system; a young-crater thermal and optical reference at low latitude.\n",
+      "extent": {
+        "lat_min": 8.5,
+        "lat_max": 10.5,
+        "lon_min": 339.0,
+        "lon_max": 341.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9999510571360588,
+          "min": 0.9994256496429443,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.17891178355929954,
+          "optical_vs_thermal": 0.1305668545712383,
+          "dem_vs_thermal": 0.12382453275640731,
+          "slope_vs_thermal": 0.1511510146226295,
+          "hillshade_vs_thermal": 0.10667229403267811
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.24412572474824534,
+          "optical_vs_thermal_dice": 0.25663716814159293,
+          "dem_vs_thermal_dice": 0.20445529447665547
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\copernicus"
+    },
+    "orientale": {
+      "id": "orientale",
+      "name": "Mare Orientale",
+      "description": "Interior of the youngest large multi-ring basin on the western limb, with mare patches, concentric rings and basin-ejecta texture.\n",
+      "extent": {
+        "lat_min": -20.5,
+        "lat_max": -18.5,
+        "lon_min": 266.0,
+        "lon_max": 268.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9998667612671852,
+          "min": 0.999303936958313,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 0.9999542236328125,
+          "min": 0.999267578125,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.06371192483260367,
+          "optical_vs_thermal": 0.04717680080567755,
+          "dem_vs_thermal": 0.03268203991129129,
+          "slope_vs_thermal": 0.045401849046959424,
+          "hillshade_vs_thermal": 0.037738386616677076
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.43210253280439426,
+          "optical_vs_thermal_dice": 0.3080561489166921,
+          "dem_vs_thermal_dice": 0.27982911199267624
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\orientale"
+    },
+    "alphonsus": {
+      "id": "alphonsus",
+      "name": "Alphonsus Crater",
+      "description": "Crater with a central peak, rilles and dark-halo pyroclastic deposits on its floor; a volcanic-versus-impact contrast region.\n",
+      "extent": {
+        "lat_min": -14.5,
+        "lat_max": -12.5,
+        "lon_min": 356.0,
+        "lon_max": 358.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.06051026888904559,
+          "optical_vs_thermal": 0.05091962617216331,
+          "dem_vs_thermal": 0.03240067074380089,
+          "slope_vs_thermal": 0.03802315928074007,
+          "hillshade_vs_thermal": 0.04612001979877503
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.3545926151968264,
+          "optical_vs_thermal_dice": 0.3429966432712847,
+          "dem_vs_thermal_dice": 0.23619163869392737
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\alphonsus"
+    },
+    "plato": {
+      "id": "plato",
+      "name": "Plato Crater",
+      "description": "Large dark-floored crater near Mare Frigoris at ~52N: flat basalt floor inside steep, high-latitude walls with low sun angles.\n",
+      "extent": {
+        "lat_min": 50.5,
+        "lat_max": 52.5,
+        "lon_min": 349.5,
+        "lon_max": 351.5
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9977868497371674,
+          "min": 0.9879376888275146,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.14874277251890441,
+          "optical_vs_thermal": 0.06968784908723186,
+          "dem_vs_thermal": 0.0396566188463664,
+          "slope_vs_thermal": 0.10658629147588135,
+          "hillshade_vs_thermal": 0.08538035984825293
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.44644491913335366,
+          "optical_vs_thermal_dice": 0.41959108941104667,
+          "dem_vs_thermal_dice": 0.4102837961550198
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\plato"
+    },
+    "grimaldi": {
+      "id": "grimaldi",
+      "name": "Grimaldi Basin",
+      "description": "Dark mare-filled floor of the Grimaldi basin on the western limb, with strong albedo contrast against surrounding highlands.\n",
+      "extent": {
+        "lat_min": -6.5,
+        "lat_max": -4.5,
+        "lon_min": 290.5,
+        "lon_max": 292.5
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9999918416142464,
+          "min": 0.9998694658279419,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.21015717644545823,
+          "optical_vs_thermal": 0.033930879966604446,
+          "dem_vs_thermal": 0.026331066490104922,
+          "slope_vs_thermal": 0.031012155222413715,
+          "hillshade_vs_thermal": 0.024712544867892414
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.3046994202014037,
+          "optical_vs_thermal_dice": 0.4025022886786695,
+          "dem_vs_thermal_dice": 0.24763503204150136
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\grimaldi"
+    },
+    "kepler": {
+      "id": "kepler",
+      "name": "Kepler Crater",
+      "description": "Young bright-rayed crater on Oceanus Procellarum with a sharp rim and high-albedo ejecta against dark mare.\n",
+      "extent": {
+        "lat_min": 7.0,
+        "lat_max": 9.0,
+        "lon_min": 321.0,
+        "lon_max": 323.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9964219890534878,
+          "min": 0.9541296362876892,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.19721022616348147,
+          "optical_vs_thermal": 0.18926412568145504,
+          "dem_vs_thermal": 0.4137254207486467,
+          "slope_vs_thermal": 0.24573646106630934,
+          "hillshade_vs_thermal": 0.17382757894639983
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.3988404028074458,
+          "optical_vs_thermal_dice": 0.4345437900518767,
+          "dem_vs_thermal_dice": 0.4559047909673482
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\kepler"
+    },
+    "apollo_basin": {
+      "id": "apollo_basin",
+      "name": "Apollo Basin (farside)",
+      "description": "Interior of the Apollo impact basin in the South Pole-Aitken region: farside mare patches and basin-floor fracturing.\n",
+      "extent": {
+        "lat_min": -37.0,
+        "lat_max": -35.0,
+        "lon_min": 207.0,
+        "lon_max": 209.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.9979227967560291,
+          "min": 0.9784232378005981,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.15543547965012836,
+          "optical_vs_thermal": 0.040272832989969504,
+          "dem_vs_thermal": 0.029591516093261598,
+          "slope_vs_thermal": 0.04504922361464398,
+          "hillshade_vs_thermal": 0.03746974395414644
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.3933475740006103,
+          "optical_vs_thermal_dice": 0.37976808056148914,
+          "dem_vs_thermal_dice": 0.24961855355508086
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\apollo_basin"
+    },
+    "korolev": {
+      "id": "korolev",
+      "name": "Korolev Crater (farside)",
+      "description": "Large farside crater inside the Korolev basin: heavily cratered highland terrain with no mare fill.\n",
+      "extent": {
+        "lat_min": -5.0,
+        "lat_max": -3.0,
+        "lon_min": 201.5,
+        "lon_max": 203.5
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.987960658967495,
+          "min": 0.8296746611595154,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.16505794262368753,
+          "optical_vs_thermal": 0.07437254875290768,
+          "dem_vs_thermal": 0.03402651524652454,
+          "slope_vs_thermal": 0.03502664866728532,
+          "hillshade_vs_thermal": 0.05296199603656597
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.12465669819957279,
+          "optical_vs_thermal_dice": 0.22871528837351235,
+          "dem_vs_thermal_dice": 0.16722612145254806
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\korolev"
+    },
+    "moscoviense": {
+      "id": "moscoviense",
+      "name": "Mare Moscoviense (farside)",
+      "description": "Farside mare in the Moscoviense basin: one of the few large farside mare units, with a highland rim and a thin dark basalt fill.\n",
+      "extent": {
+        "lat_min": 26.5,
+        "lat_max": 28.5,
+        "lon_min": 147.0,
+        "lon_max": 149.0
+      },
+      "tiling": {
+        "tile_size_pixels": 64,
+        "overlap_pixels": 0,
+        "rows": 4,
+        "columns": 4,
+        "total_tiles": 16
+      },
+      "common_grid": {
+        "height": 256,
+        "width": 256,
+        "pixels_per_degree": 128,
+        "nominal_m_per_pixel": 236.9011751886676
+      },
+      "coverage_stats": {
+        "optical": {
+          "mean": 0.999978244304657,
+          "min": 0.9998694658279419,
+          "max": 1.0
+        },
+        "dem": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "thermal": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "validation": {
+        "structural_pass": true,
+        "mutual_information_nats": {
+          "optical_vs_dem": 0.06709976600291995,
+          "optical_vs_thermal": 0.018653942636653317,
+          "dem_vs_thermal": 0.06195549651862623,
+          "slope_vs_thermal": 0.020078918269340093,
+          "hillshade_vs_thermal": 0.02016965502203966
+        },
+        "edge_dice_scores": {
+          "optical_vs_dem_dice": 0.4809276777540433,
+          "optical_vs_thermal_dice": 0.22184925236496797,
+          "dem_vs_thermal_dice": 0.14433933475740007
+        }
+      },
+      "benchmark_dir": "C:\\Supreeth\\Projects\\Lunar\\Multimodal_benchmark_Dataset_FYP_P1\\data\\benchmark\\moscoviense"
+    }
+  },
+  "summary": {
+    "total_regions": 28,
+    "total_tiles": 448,
+    "region_ids": [
+      "alphonsus",
+      "apollo_basin",
+      "aristarchus",
+      "aristoteles",
+      "atlas",
+      "copernicus",
+      "descartes",
+      "endymion",
+      "fra_mauro",
+      "grimaldi",
+      "humboldtianum",
+      "hyginus",
+      "ingenii",
+      "kepler",
+      "korolev",
+      "lacus_mortis",
+      "mare_crisium",
+      "montes_apenninus",
+      "moscoviense",
+      "orientale",
+      "plato",
+      "posidonius",
+      "proclus",
+      "sinus_iridum",
+      "taurus_littrow",
+      "tranquillitatis",
+      "tsiolkovsky",
+      "tycho"
+    ]
+  }
+}
